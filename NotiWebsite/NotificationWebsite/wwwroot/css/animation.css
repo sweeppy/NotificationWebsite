@@ -1,0 +1,132 @@
+@keyframes open-window {
+  0% {
+    transform: scale(0, 0);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes link-point-text-larger {
+  from {
+    font-size: 18px;
+  }
+
+  to {
+    font-size: 20px;
+  }
+}
+
+@keyframes link-point-text-smaller {
+  from {
+    font-size: 20px;
+  }
+
+  to {
+    font-size: 18px;
+  }
+}
+
+@keyframes btn-larger {
+  from {
+    transform: scale(1);
+    border-radius: 18px;
+  }
+
+  to {
+    transform: scale(1.1);
+    border-radius: 28px;
+  }
+}
+
+@keyframes btn-smaller {
+  from {
+    transform: scale(1.1);
+    border-radius: 28px;
+  }
+
+  to {
+    transform: scale(1);
+    border-radius: 18px;
+  }
+}
+
+@keyframes open-modal-win {
+  from {
+    transform: translateY(400px) translateX(-50%);
+  }
+
+  to {
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@keyframes close-modal-win {
+  0% {
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  40% {
+    transform: translateY(-70%) translateX(-50%);
+  }
+
+  100% {
+    transform: translateY(400px) translateX(-50%);
+  }
+}
+
+@keyframes close-btn-hover {
+  from{
+    font-size: 3rem;
+    transform: translate(0);
+  }
+  to{
+    font-size: 3.38rem;
+    transform: translate(2px, -5px);
+  }
+}
+@keyframes close-btn-unhover {
+  from{
+    font-size: 3.3rem;
+    transform: translate(2px, -5px);
+  }
+  to{
+    font-size: 3rem;
+    transform: translate(0);
+  }
+}
+
+@keyframes active-btn {
+  from {
+    color: #35374B;
+    transform: scale(0.9);
+  }
+
+  to {
+    color: #EEEE;
+    transform: scale(1);
+  }
+}
+
+@keyframes disable-btn {
+  from {
+    color: #EEEE;
+    transform: scale(1);
+  }
+
+  to {
+
+    color: #35374B;
+    transform: scale(0.9);
+  }
+}

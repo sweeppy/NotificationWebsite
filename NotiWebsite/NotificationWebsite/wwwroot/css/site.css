@@ -1,0 +1,295 @@
+@import url("animation.css");
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+body {
+  background: #222831;
+  overflow: hidden;
+}
+
+.main-win {
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  width: 40rem;
+  height: 30rem;
+  background-color: #31363F;
+  border-radius: 5%;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+  animation: open-window 2s forwards;   
+}
+
+.h-main{
+  color: #EEEEEE;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-btn{
+  margin-top: 30px;
+  width: 35rem;
+  height: 5rem;
+  border:none;
+  border-radius: 18px;
+  background-color: #222831;
+  font-size: 30px;
+  color: #EEEEEE;
+  animation: btn-smaller 0.3s forwards;
+}
+.main-btn:hover{
+  animation: btn-larger 0.3s forwards;
+}
+
+
+.login{
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  margin-left: 5%;
+}
+
+.account {
+  color: #76ABAE;
+  font-size: 18px;
+  text-decoration: none;
+  animation: link-point-text-smaller 0.3s forwards;
+  padding: 0px 30px;
+}
+
+.account:hover {
+  animation: link-point-text-larger 0.3s forwards;
+  color: #76ABAE;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 30rem;
+  background-color: #31363F;
+  border-radius: 18px;
+  animation: open-modal-win 0.3s forwards;
+}
+.modal-closing {
+  animation: close-modal-win 0.5s forwards;
+}
+
+
+.h-sign-up{
+  color: #EEEEEE;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.h-login{
+  color: #EEEEEE;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.close-btn{
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: #76ABAE;
+  animation: close-btn-unhover 0.18s forwards
+}
+.close-btn:hover{
+  animation: close-btn-hover 0.18s forwards
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.input-field{
+  background-color: #222831;
+  border-radius: 18px;
+  height: 4rem;
+  width: 25rem;
+  border: none;
+  margin-bottom: 20px;
+  padding: 5px;
+  color: #EEEEEE;
+  text-indent: 12px;
+}
+.input-field::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  text-indent: 0px;
+  background-color: #222831;
+}
+.input-field:focus{
+  outline: none;
+}
+.input-field :not(:focus):not(:active){
+  background-color: #222831;
+}
+.login-img{
+  background-image: url('../../images/user.png');
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 30px 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.password-img{
+  background-image: url('../../images/password.png');
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 30px 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.auth-btn{
+  position: absolute;
+  background-color: #50727B;
+  bottom: 5rem;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 12px;
+  border: none;
+  box-shadow: #222831;
+  font-size: 20px;
+  color: #35374B;
+  transform: scale(0.9);
+}
+.auth-btn.active {
+  animation: active-btn 0.5s forwards;
+}
+.auth-btn.disable{
+  animation: disable-btn 0.5s forwards;
+}

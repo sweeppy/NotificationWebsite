@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <div class="main-win">
+            <h2 class="poppins-extrabold h-main">Get notification</h2> 
+            <div class="container">
+                <button class="main-btn poppins-light">
+                    <div>
+                        <img src="~/images/gmail.png" alt="">
+                        Gmail
+                    </div>
+                </button>
+                <button class="main-btn poppins-light">
+                    <div>
+                        <img src="~/images/telegram.png" alt="">
+                        Telegram
+                    </div>
+                </button>
+                <button class="main-btn poppins-light">
+                    <div>
+                        <img src="~/images/vk.png" alt="">
+                        Vk
+                    </div>
+                </button>
+            </div>
+            <div class="login">
+                <a href="#" class="account poppins-bold" onclick="openLogin()">Login</a>
+                <a href="#" class="account poppins-bold" onclick="openSignup()">Create account</a>
+            </div>
+            <div id="login-win" class="modal login">
+                <h3 class="h-login">Enter your details:</h3>
+                <button class="close-btn" onclick="closeLogin()">×</button>
+                <form class="login-form" action="">
+                    <input class="input-field login-img poppins-bold-italic" type="text" id="login_username" placeholder="Username:" onfocus="clearUsernamePlaceholder()" oninput="changeAuthBtn()" autocomplete="off">
+                    <input class="input-field poppins-bold-italic password-img" type="password" id="login_password" name="password" placeholder="Password:" onfocus="clearPasswordPlaceholder()" oninput="changeAuthBtn()">
+                    <button id ="loginBtn" class="auth-btn poppins-semibold">Login</button>
+                </form>
+            </div>
+            <div id="sign-up-win" class="modal sign-up">
+                <h3 class="h-sign-up">Enter your details:</h3>
+                <button class="close-btn" onclick="closeSignUp()">×</button>
+            </div>
+        </div>
+</body>
+
+</html>
