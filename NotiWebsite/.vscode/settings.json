@@ -1,3 +1,7 @@
 {
-  "dotnet.defaultSolution": "NotificationWebsite.sln"
+  "dotnet.defaultSolution": "NotificationWebsite.sln",
+  "cSpell.words": [
+    "extralight",
+    "unhover"
+  ]
 }

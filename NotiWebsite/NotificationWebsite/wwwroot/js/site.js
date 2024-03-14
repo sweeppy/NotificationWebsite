@@ -1,5 +1,18 @@
 ﻿document.getElementById("login-win").style.display = "none";
 document.getElementById("sign-up-win").style.display = "none";
+const login_username = document.getElementById("login_username");
+const login_password = document.getElementById("login_password");
+const signUp_mail = document.getElementById("signUp_mail");
+const signUp_username = document.getElementById("signUp_username");
+const signUp_password = document.getElementById("signUp_password");
+inputs = [
+  login_username,
+  login_password,
+  signUp_mail,
+  signUp_username,
+  signUp_password,
+];
+placeholderListener(inputs);
 
 function openAuthWin(modalWin, acceptBtn) {
   modalWin.style.display = "block";
@@ -47,24 +60,21 @@ function closeSignUp() {
   closeAuthWin(modal, registerProp, authBtnProp);
 }
 
-//view of username placeholder(Login):
-login_username.addEventListener("focus", function () {
-  login_username.removeAttribute("placeholder");
-});
-login_username.addEventListener("blur", function () {
-  if (!login_username.value) {
-    login_username.setAttribute("placeholder", "Username:");
-  }
-});
-//view of password placeholder(Login):
-login_password.addEventListener("focus", function () {
-  login_password.removeAttribute("placeholder");
-});
-login_password.addEventListener("blur", function () {
-  if (!login_password.value) {
-    login_password.setAttribute("placeholder", "Password:");
-  }
-});
+function placeholderListener(fields) {
+  fields.forEach((element) => {
+    element.addEventListener("focus", function () {
+      element.removeAttribute("placeholder");
+    });
+    element.addEventListener("blur", function () {
+      if (!element.value) {
+        element.setAttribute(
+          "placeholder",
+          `Enter ${element.getAttribute("name")}:`
+        );
+      }
+    });
+  });
+}
 
 //check that every input filled
 function checkFill(inputsProp) {
