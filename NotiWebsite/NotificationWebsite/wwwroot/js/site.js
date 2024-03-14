@@ -39,7 +39,8 @@ function openLogin() {
 }
 function openSignup() {
   const modal = document.getElementById("sign-up-win");
-  modal.style.display = "block";
+  const signUpBtn = document.getElementById("signUpBtn");
+  openAuthWin(modal, signUpBtn);
 }
 
 function closeLogin() {
