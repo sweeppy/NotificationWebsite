@@ -224,7 +224,7 @@ body {
   animation: close-btn-hover 0.18s forwards
 }
 
-.login-form{
+.auth-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,7 +277,6 @@ body {
 .auth-btn{
   position: absolute;
   background-color: #50727B;
-  bottom: 5rem;
   width: 12rem;
   height: 4rem;
   border-radius: 12px;
@@ -286,6 +285,12 @@ body {
   font-size: 20px;
   color: #35374B;
   transform: scale(0.9);
+}
+.auth-btn-login{
+  bottom: 5rem;
+}
+.auth-btn-sign-up{
+  bottom: 2.8rem;
 }
 .auth-btn.active {
   animation: active-btn 0.5s forwards;

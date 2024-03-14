@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tgbO/KPbhvr8TXi/DPds7jFT3TzCkOmfwl+74pF7fes=",
+  "Hash": "YwgrUzBF9iPjLtleSpBJvWBFwTgcrjpIv1ZaUZ49hEc=",
   "Source": "NotificationWebsite",
   "BasePath": "_content/NotificationWebsite",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\images\\gmail.png"
     },
     {
+      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\password.png",
+      "SourceId": "NotificationWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\",
+      "BasePath": "_content/NotificationWebsite",
+      "RelativePath": "images/password.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\password.png"
+    },
+    {
       "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\telegram.png",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
@@ -148,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\telegram.png"
+    },
+    {
+      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\user.png",
+      "SourceId": "NotificationWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\",
+      "BasePath": "_content/NotificationWebsite",
+      "RelativePath": "images/user.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user.png"
     },
     {
       "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\vk.png",
