@@ -160,11 +160,10 @@ body {
 }
 
 
-.login{
+.login-win{
   display: flex;
   justify-content: center;
   padding: 18px;
-  margin-left: 5%;
 }
 
 .account {
@@ -257,7 +256,7 @@ body {
 .input-field :not(:focus):not(:active){
   background-color: #222831;
 }
-.login-img{
+.user-img{
   background-image: url('../../images/user.png');
   background-repeat: no-repeat;
   background-position: 10px;
@@ -267,6 +266,14 @@ body {
 }
 .password-img{
   background-image: url('../../images/password.png');
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 30px 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.mail-img{
+  background-image: url('../../images/mail.png');
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: 30px 30px;

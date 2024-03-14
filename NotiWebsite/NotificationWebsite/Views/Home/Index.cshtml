@@ -30,15 +30,15 @@
                     </div>
                 </button>
             </div>
-            <div class="login">
+            <div class="login-win">
                 <a href="#" class="account poppins-bold" onclick="openLogin()">Login</a>
-                <a href="#" class="account poppins-bold" onclick="openSignup()">Create account</a>
+                <a href="#" class="account poppins-bold" onclick="openSignup()">Sign up</a>
             </div>
             <div id="login-win" class="modal">
                 <h3 class="h-login">Enter your details:</h3>
                 <button class="close-btn" onclick="closeLogin()">×</button>
                 <form class="auth-form" action="">
-                    <input id="login_username" name="username" class="input-field login-img poppins-bold-italic" type="text"  placeholder="Enter username:" oninput="changeStateLoginBtn()" autocomplete="off">
+                    <input id="login_username" name="username" class="input-field user-img poppins-bold-italic" type="text"  placeholder="Enter username:" oninput="changeStateLoginBtn()" autocomplete="off">
                     <input id="login_password" name="password" class="input-field poppins-bold-italic password-img" type="password" name="password" placeholder="Enter password:" oninput="changeStateLoginBtn()">
                     <button id ="loginBtn" class="auth-btn auth-btn-login poppins-semibold">Login</button>
                 </form>
@@ -47,10 +47,10 @@
                 <h3 class="h-sign-up">Enter your details:</h3>
                 <button class="close-btn" onclick="closeSignUp()">×</button>
                 <form action="" class="auth-form">
-                    <input id="signUp_mail" name="mail" class="input-field poppins-bold-italic" type="text" placeholder="Enter mail:" oninput="changeStateSignUpBtn()"
+                    <input id="signUp_mail" name="mail" class="input-field poppins-bold-italic mail-img" type="text" placeholder="Enter mail:" oninput="changeStateSignUpBtn()"
                     autocomplete="off">
-                    <input id="signUp_username" name="username" class="input-field poppins-bold-italic" type="text" placeholder="Enter username:" oninput="changeStateSignUpBtn()" autocomplete="off">
-                    <input id="signUp_password" name="password" class="input-field poppins-bold-italic" type="password" placeholder="Enter password:" oninput="changeStateSignUpBtn()" autocomplete="off">
+                    <input id="signUp_username" name="username" class="input-field poppins-bold-italic user-img" type="text" placeholder="Enter username:" oninput="changeStateSignUpBtn()" autocomplete="off">
+                    <input id="signUp_password" name="password" class="input-field poppins-bold-italic password-img" type="password" placeholder="Enter password:" oninput="changeStateSignUpBtn()" autocomplete="off">
                     <button id="signUpBtn" class="auth-btn auth-btn-sign-up poppins-semibold">Sign up</button>
                 </form>
             </div>
