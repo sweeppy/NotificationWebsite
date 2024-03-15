@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\gmail.png"
     },
     {
+      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\mail.png",
+      "PackagePath": "staticwebassets\\images\\mail.png"
+    },
+    {
       "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\password.png",
       "PackagePath": "staticwebassets\\images\\password.png"
     },

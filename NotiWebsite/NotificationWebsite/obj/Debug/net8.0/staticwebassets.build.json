@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YwgrUzBF9iPjLtleSpBJvWBFwTgcrjpIv1ZaUZ49hEc=",
+  "Hash": "OwD13NEV1l7vI4F56oicSu4JqfiyR3Ot/1E5yxFTO+8=",
   "Source": "NotificationWebsite",
   "BasePath": "_content/NotificationWebsite",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\gmail.png"
+    },
+    {
+      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\mail.png",
+      "SourceId": "NotificationWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\",
+      "BasePath": "_content/NotificationWebsite",
+      "RelativePath": "images/mail.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mail.png"
     },
     {
       "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\password.png",

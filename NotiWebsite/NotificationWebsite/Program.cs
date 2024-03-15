@@ -1,8 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using NotificationWebsite.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<UsersDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("UsersConnection"))); //connect UsersDb
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
