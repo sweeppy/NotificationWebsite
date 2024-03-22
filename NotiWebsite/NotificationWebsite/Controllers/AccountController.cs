@@ -1,31 +1,31 @@
 using Microsoft.AspNetCore.Mvc;
-using NotificationWebsite.Data;
-using NotificationWebsite.Models;
+using NotificationWebsite.Dtos;
+
 
 namespace NotificationWebsite.Controllers
 {
     public class AccountController : Controller
     {
         private readonly ILogger<AccountController> _logger;
-        private readonly UsersDbContext _db;
 
-        public AccountController(ILogger<AccountController> logger, UsersDbContext db)
+        public AccountController(ILogger<AccountController> logger)
         {
             _logger = logger;
-            _db = db;
+        }
+
+        public IActionResult Register()
+        {
+            return View();
         }
         [HttpPost]
-        public IActionResult SignUp([FromBody] User user)
+        public IActionResult Register(RegisterDto Dto)
         {
-            if (!ModelState.IsValid)
-            {
-                return Json(new { success = false });
-            }
+            return null;//TODO
+        }
 
-            _db.Users.Add(entity: user);
-            _db.SaveChanges();
-            return Json(new { success = true });
-
+        public IActionResult Login()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

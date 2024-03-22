@@ -17,12 +17,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\gmail.png",
-      "PackagePath": "staticwebassets\\images\\gmail.png"
+      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\Email.png",
+      "PackagePath": "staticwebassets\\images\\Email.png"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\mail.png",
-      "PackagePath": "staticwebassets\\images\\mail.png"
+      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\gmail.png",
+      "PackagePath": "staticwebassets\\images\\gmail.png"
     },
     {
       "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\password.png",

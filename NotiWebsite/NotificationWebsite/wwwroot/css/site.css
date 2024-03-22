@@ -181,6 +181,7 @@ body {
 
 .modal {
   position: fixed;
+  display: block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -189,9 +190,6 @@ body {
   background-color: #31363F;
   border-radius: 18px;
   animation: open-modal-win 0.3s forwards;
-}
-.modal-closing {
-  animation: close-modal-win 0.5s forwards;
 }
 
 
@@ -211,6 +209,7 @@ body {
 }
 .close-btn{
   position: absolute;
+  text-decoration: none;
   right: 2rem;
   top: 0.5rem;
   font-size: 3rem;
@@ -220,6 +219,8 @@ body {
   animation: close-btn-unhover 0.18s forwards
 }
 .close-btn:hover{
+  text-decoration: none;
+  color: #76ABAE;
   animation: close-btn-hover 0.18s forwards
 }
 
@@ -272,8 +273,8 @@ body {
   padding-left: 40px;
   padding-right: 40px;
 }
-.mail-img{
-  background-image: url('../../images/mail.png');
+.Email-img{
+  background-image: url('../../images/Email.png');
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: 30px 30px;

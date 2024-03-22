@@ -17,4 +17,10 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NotificationWebsite.Utility\NotificationWebsite.Utility.csproj" />
+    <ProjectReference Include="..\NotificationWebsite.Models\NotificationWebsite.Models.csproj" />
+    <ProjectReference Include="..\NotificationWebsite.DataAccess\NotificationWebsite.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

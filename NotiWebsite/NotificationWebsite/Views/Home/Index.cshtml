@@ -32,40 +32,10 @@
             </button>
         </div>
         <div class="login-win">
-            <a href="#" class="account poppins-bold" onclick="openLogin()">Login</a>
-            <a href="#" class="account poppins-bold" onclick="openSignup()">Sign up</a>
+            <a class="account poppins-bold" asp-controller="Account" asp-action="Login">Login</a>
+            <a class="account poppins-bold" asp-controller="Account" asp-action="Register">Sign up</a>
         </div>
-        <div id="login-win" class="modal">
-            <h3 class="h-login">Enter your details:</h3>
-            <button class="close-btn" onclick="closeLogin()">×</button>
-            <form class="auth-form" method="post">
-                <input asp-for="Username" id="login_username" name="username"
-                    class="input-field user-img poppins-bold-italic" placeholder="Enter username:"
-                    oninput="changeStateLoginBtn()" autocomplete="off">
-                <input asp-for="Password" id="login_password" name="password"
-                    class="input-field poppins-bold-italic password-img" type="password" name="password"
-                    placeholder="Enter password:" oninput="changeStateLoginBtn()">
-                <button type="submit" id="loginBtn" class="auth-btn auth-btn-login poppins-semibold">Login</button>
-            </form>
-        </div>
-        <div id="sign-up-win" class="modal">
-            <h3 class="h-sign-up">Enter your details:</h3>
-            <button class="close-btn" onclick="closeSignUp()">×</button>
 
-            <form method="post" class="auth-form">
-                <div asp-validation-summary="All" class="poppins-bold-italic"></div>
-                <input id="signUp_mail" name="mail" class="input-field poppins-bold-italic mail-img" type="text"
-                    placeholder="Enter mail:" oninput="changeStateSignUpBtn()" autocomplete="off">
-
-                <input id="signUp_username" name="username" class="input-field poppins-bold-italic user-img" type="text"
-                    placeholder="Enter username:" oninput="changeStateSignUpBtn()" autocomplete="off">
-                <input id="signUp_password" name="password" class="input-field poppins-bold-italic password-img"
-                    type="password" placeholder="Enter password:" oninput="changeStateSignUpBtn()" autocomplete="off">
-                <button type="button" id="signUpBtn" onclick="Register()"
-                    class="auth-btn auth-btn-sign-up poppins-semibold">Sign up</button>
-            </form>
-
-        </div>
     </div>
 </body>
 

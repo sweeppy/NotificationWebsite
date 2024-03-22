@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using NotificationWebsite.Data;
+using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
 
 namespace NotificationWebsite.Controllers;

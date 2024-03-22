@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using NotificationWebsite.Data;
+using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Dtos;
 using NotificationWebsite.Models;
 
@@ -22,14 +22,14 @@ namespace NotificationWebsite.Controllers.API
             var user = new User
             {
                 Username = dto.Username,
-                Mail = dto.Mail,
+                Email = dto.Email,
                 Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)//Password hash
             };
             try
             {
                 _repository.Create(user);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return Json(new { success = false });
             }

@@ -1,0 +1,11 @@
+F:\NotiWebsite\NotificationWebsite.Utility\bin\Debug\net8.0\NotificationWebsite.Utility.deps.json
+F:\NotiWebsite\NotificationWebsite.Utility\bin\Debug\net8.0\NotificationWebsite.Utility.dll
+F:\NotiWebsite\NotificationWebsite.Utility\bin\Debug\net8.0\NotificationWebsite.Utility.pdb
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.GeneratedMSBuildEditorConfig.editorconfig
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.AssemblyInfoInputs.cache
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.AssemblyInfo.cs
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.csproj.CoreCompileInputs.cache
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.dll
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\refint\NotificationWebsite.Utility.dll
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.pdb
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\ref\NotificationWebsite.Utility.dll

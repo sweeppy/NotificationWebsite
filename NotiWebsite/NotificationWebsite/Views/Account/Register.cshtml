@@ -1,0 +1,34 @@
+@model NotificationWebsite.Models.User
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="sign-up-win" class="main-win">
+        <h3 class="h-sign-up">Enter your details:</h3>
+        <a class="close-btn" asp-controller="Home" asp-action="Index">×</a>
+
+        <form method="post" class="auth-form">
+            <div asp-validation-summary="All" class="poppins-bold-italic"></div>
+            <input asp-for="Email" id="signUp_Email" name="email" class="input-field poppins-bold-italic Email-img"
+                type="text" placeholder="Enter email:" oninput="changeStateSignUpBtn()" autocomplete="off">
+
+            <input asp-for="Username" id="signUp_username" name="username"
+                class="input-field poppins-bold-italic user-img" type="text" placeholder="Enter username:"
+                oninput="changeStateSignUpBtn()" autocomplete="off">
+            <input asp-for="Password" id="signUp_password" name="password"
+                class="input-field poppins-bold-italic password-img" type="password" placeholder="Enter password:"
+                oninput="changeStateSignUpBtn()" autocomplete="off">
+            <button type="submit" id="signUpBtn" class="auth-btn auth-btn-sign-up poppins-semibold">Sign up</button>
+        </form>
+
+    </div>
+    </div>
+</body>
+
+</html>
