@@ -1,10 +1,22 @@
 {
   "dotnet.defaultSolution": "NotificationWebsite.sln",
   "cSpell.words": [
+    "ASPNETCORE",
+    "crossorigin",
     "extralight",
+    "jquery",
+    "onclick",
+    "oninput",
+    "preconnect",
+    "Signup",
+    "stylesheet",
     "unhover"
   ],
   "cSpell.enableFiletypes": [
-    "csharp"
+    "XAML",
+    "aspnetcorerazor",
+    "csharp",
+    "cshtml",
+    "razor"
   ]
 }

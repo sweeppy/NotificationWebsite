@@ -15,8 +15,8 @@ inputs = [
 placeholderListener(inputs);
 
 function openAuthWin(modalWin, acceptBtn) {
-  modalWin.style.display = "block";
   acceptBtn.disabled = true;
+  modalWin.style.display = "block";
 }
 function closeAuthWin(modal, inputsProp, authBtn) {
   modal.classList.add("modal-closing"); // Add the class to trigger the closing animation
@@ -117,4 +117,28 @@ function changeAuthBtn(inputsProp, btn) {
   } else {
     btn.disabled = true;
   }
+}
+
+function Register() {
+  var user = {
+    Username: document.getElementById("signUp_username").value,
+    Mail: document.getElementById("signUp_mail").value,
+    Password: document.getElementById("signUp_password").value,
+  };
+
+  $.ajax({
+    type: "POST",
+    url: "/api/register",
+    contentType: "application/json",
+    data: JSON.stringify(user),
+    dataType: "json",
+    success: function (data) {
+      if (data.success) {
+        closeSignUp();
+      }
+    },
+    error: function (err) {
+      console.log("Register js error:", err);
+    },
+  });
 }

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "I0vjpY+Ylt8H5ZM1AO5UZ0ETN2LRJ4owzZNXEa+qZtYyUjutlTXyWLYhoEqFLIdPI8EZ9D5JcwWBbvHneie1yA==",
+  "dgSpecHash": "qqhgPHwF7kDWmN4OzKQ1lSW4+4uugtDqOc9hVteAyt/mfPyx4FfdL/pU88D2D3T5ygZjM0pRoX/8qqDQyWizTA==",
   "success": true,
   "projectFilePath": "F:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sweeppy\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

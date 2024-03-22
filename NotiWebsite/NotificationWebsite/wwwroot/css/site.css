@@ -297,7 +297,7 @@ body {
   bottom: 5rem;
 }
 .auth-btn-sign-up{
-  bottom: 2.8rem;
+  bottom: 2.2rem;
 }
 .auth-btn.active {
   animation: active-btn 0.5s forwards;

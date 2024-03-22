@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using NotificationWebsite.Data;
 using NotificationWebsite.Models;
 
 namespace NotificationWebsite.Controllers;
@@ -7,10 +8,11 @@ namespace NotificationWebsite.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly UsersDbContext _db;
+    public HomeController(ILogger<HomeController> logger, UsersDbContext db)
     {
         _logger = logger;
+        _db = db;
     }
 
     public IActionResult Index()

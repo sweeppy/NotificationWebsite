@@ -11,8 +11,8 @@ using NotificationWebsite.Data;
 namespace NotificationWebsite.Migrations
 {
     [DbContext(typeof(UsersDbContext))]
-    [Migration("20240315133841_AddUsersTableToDb")]
-    partial class AddUsersTableToDb
+    [Migration("20240320145922_CreateUsersTable")]
+    partial class CreateUsersTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,17 +34,22 @@ namespace NotificationWebsite.Migrations
 
                     b.Property<string>("Mail")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Mail")
+                        .IsUnique();
 
                     b.ToTable("Users");
                 });

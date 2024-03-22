@@ -135,3 +135,4 @@ F:\NotiWebsite\notificationwebsite\bin\Debug\net8.0\runtimes\win\lib\net6.0\Syst
 F:\NotiWebsite\notificationwebsite\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 F:\NotiWebsite\notificationwebsite\obj\Debug\net8.0\NotificationWebsite.csproj.AssemblyReference.cache
 F:\NotiWebsite\notificationwebsite\obj\Debug\net8.0\NotificationWebsite.csproj.CopyComplete
+F:\NotiWebsite\notificationwebsite\bin\Debug\net8.0\BCrypt.Net-Next.dll
