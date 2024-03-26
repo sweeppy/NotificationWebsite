@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using NotificationWebsite.DataAccess.Data;
-using NotificationWebsite.Dtos;
+using NotificationWebsite.Models.Dtos;
 using NotificationWebsite.Models;
 
 namespace NotificationWebsite.Controllers.API

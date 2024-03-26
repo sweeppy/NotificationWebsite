@@ -8,8 +8,8 @@ namespace NotificationWebsite.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private readonly UsersDbContext _db;
-    public HomeController(ILogger<HomeController> logger, UsersDbContext db)
+    private readonly ApplicationDbContext _db;
+    public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
     {
         _logger = logger;
         _db = db;

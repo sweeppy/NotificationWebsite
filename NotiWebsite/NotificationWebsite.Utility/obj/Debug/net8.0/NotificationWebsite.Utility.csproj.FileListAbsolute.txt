@@ -9,3 +9,15 @@ F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.
 F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\refint\NotificationWebsite.Utility.dll
 F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.pdb
 F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\ref\NotificationWebsite.Utility.dll
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\bin\Debug\net8.0\NotificationWebsite.Utility.deps.json
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\bin\Debug\net8.0\NotificationWebsite.Utility.dll
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\bin\Debug\net8.0\NotificationWebsite.Utility.pdb
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.AssemblyInfoInputs.cache
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.AssemblyInfo.cs
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.csproj.CoreCompileInputs.cache
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.sourcelink.json
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.dll
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\refint\NotificationWebsite.Utility.dll
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.pdb
+C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\ref\NotificationWebsite.Utility.dll

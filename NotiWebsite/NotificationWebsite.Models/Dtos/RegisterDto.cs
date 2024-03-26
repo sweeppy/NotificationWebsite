@@ -1,5 +1,5 @@
 
-namespace NotificationWebsite.Dtos
+namespace NotificationWebsite.Models.Dtos
 {
     public class RegisterDto
     {

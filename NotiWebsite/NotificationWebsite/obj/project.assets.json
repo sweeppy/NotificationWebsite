@@ -1533,10 +1533,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
-          "NotificationWebsite.Models": "1.0.0",
-          "NotificationWebsite.Utility": "1.0.0"
+          "Newtonsoft.Json": "13.0.3",
+          "NotificationWebsite.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/NotificationWebsite.DataAccess.dll": {}
@@ -4240,6 +4241,7 @@
     "net8.0": [
       "BCrypt.Net-Next >= 4.0.3",
       "Microsoft.EntityFrameworkCore >= 8.0.3",
+      "Microsoft.EntityFrameworkCore.Design >= 8.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.3",
       "Newtonsoft.Json >= 13.0.3",
@@ -4308,6 +4310,12 @@
             "version": "[4.0.3, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.0.3, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.3, )"
           },

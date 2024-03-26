@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WNKw5HInoDDIPD7gtzVjomPicIfB7eQJpyXpwPJL69A=",
+  "Hash": "fZM/AtZAp9q0Bjp33emayu585hyEtYsWW6zcd5hqSGw=",
   "Source": "NotificationWebsite",
   "BasePath": "_content/NotificationWebsite",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NotificationWebsite.styles.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NotificationWebsite.styles.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Computed",
-      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/NotificationWebsite",
       "RelativePath": "NotificationWebsite.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "F:\\NotiWebsite\\notificationwebsite\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NotificationWebsite.styles.css"
+      "OriginalItemSpec": "F:\\NotiWebsite\\NotificationWebsite\\obj\\Debug\\net8.0\\scopedcss\\bundle\\NotificationWebsite.styles.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NotificationWebsite.bundle.scp.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NotificationWebsite.bundle.scp.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Computed",
-      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/NotificationWebsite",
       "RelativePath": "NotificationWebsite.bundle.scp.css",
       "AssetKind": "All",
@@ -52,10 +52,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "F:\\NotiWebsite\\notificationwebsite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NotificationWebsite.bundle.scp.css"
+      "OriginalItemSpec": "F:\\NotiWebsite\\NotificationWebsite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NotificationWebsite.bundle.scp.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\animation.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\css\\animation.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -74,7 +74,7 @@
       "OriginalItemSpec": "wwwroot\\css\\animation.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\site.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\css\\site.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -93,7 +93,7 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\favicon.ico",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\favicon.ico",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -112,7 +112,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\Email.png",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\images\\Email.png",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -131,7 +131,7 @@
       "OriginalItemSpec": "wwwroot\\images\\Email.png"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\gmail.png",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\images\\gmail.png",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -150,7 +150,7 @@
       "OriginalItemSpec": "wwwroot\\images\\gmail.png"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\password.png",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\images\\password.png",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -169,7 +169,7 @@
       "OriginalItemSpec": "wwwroot\\images\\password.png"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\telegram.png",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\images\\telegram.png",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -188,7 +188,7 @@
       "OriginalItemSpec": "wwwroot\\images\\telegram.png"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\user.png",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\images\\user.png",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -207,7 +207,7 @@
       "OriginalItemSpec": "wwwroot\\images\\user.png"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\vk.png",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\images\\vk.png",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -226,7 +226,7 @@
       "OriginalItemSpec": "wwwroot\\images\\vk.png"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\site.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\js\\site.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -245,7 +245,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -264,7 +264,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -283,7 +283,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -302,7 +302,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -321,7 +321,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -340,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -359,7 +359,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -378,7 +378,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -397,7 +397,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -416,7 +416,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -435,7 +435,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -454,7 +454,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -473,7 +473,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -492,7 +492,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -511,7 +511,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -530,7 +530,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -549,7 +549,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -568,7 +568,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -587,7 +587,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -606,7 +606,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -625,7 +625,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -644,7 +644,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -663,7 +663,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -682,7 +682,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -701,7 +701,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -720,7 +720,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -739,7 +739,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -758,7 +758,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -777,7 +777,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -796,7 +796,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -815,7 +815,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -834,7 +834,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -853,7 +853,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -872,7 +872,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -891,7 +891,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -910,7 +910,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -929,7 +929,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -948,7 +948,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -967,7 +967,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -986,7 +986,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1005,7 +1005,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1024,7 +1024,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1043,7 +1043,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1062,7 +1062,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1081,7 +1081,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1100,7 +1100,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1119,7 +1119,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1138,7 +1138,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1157,7 +1157,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1176,7 +1176,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1195,7 +1195,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1214,7 +1214,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1233,7 +1233,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1252,7 +1252,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1271,7 +1271,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1290,7 +1290,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",
@@ -1309,7 +1309,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\NotiWebsite\\NotificationWebsite\\wwwroot\\",

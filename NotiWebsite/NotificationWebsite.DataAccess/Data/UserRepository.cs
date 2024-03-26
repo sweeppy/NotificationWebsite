@@ -4,8 +4,8 @@ namespace NotificationWebsite.DataAccess.Data
 {
     public class UserRepository : IUserRepository
     {
-        private UsersDbContext _db;
-        public UserRepository(UsersDbContext db)
+        private ApplicationDbContext _db;
+        public UserRepository(ApplicationDbContext db)
         {
             _db = db;
         }

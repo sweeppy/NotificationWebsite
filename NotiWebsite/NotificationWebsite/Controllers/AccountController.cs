@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using NotificationWebsite.Dtos;
+using NotificationWebsite.Models.Dtos;
 
 
 namespace NotificationWebsite.Controllers

@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace NotificationWebsite.Migrations
+namespace NotificationWebsite.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateUsersTable : Migration
+    public partial class CreateNotificationWebsiteDbAndSeedTableUsers : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,8 +17,8 @@ namespace NotificationWebsite.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Username = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    Mail = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
+                    Email = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -26,9 +26,9 @@ namespace NotificationWebsite.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Users_Mail",
+                name: "IX_Users_Email",
                 table: "Users",
-                column: "Mail",
+                column: "Email",
                 unique: true);
         }
 
