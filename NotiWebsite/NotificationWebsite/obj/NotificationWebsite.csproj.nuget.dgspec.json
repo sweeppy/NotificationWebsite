@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj": {}
+    "f:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj": {}
   },
   "projects": {
-    "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {
+    "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
+        "projectUniqueName": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
         "projectName": "NotificationWebsite.DataAccess",
-        "projectPath": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
+        "projectPath": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
         "packagesPath": "C:\\Users\\sweeppy\\.nuget\\packages\\",
-        "outputPath": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\obj\\",
+        "outputPath": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -158,14 +158,14 @@
         }
       }
     },
-    "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {
+    "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
+        "projectUniqueName": "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
         "projectName": "NotificationWebsite.Utility",
-        "projectPath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
+        "projectPath": "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
         "packagesPath": "C:\\Users\\sweeppy\\.nuget\\packages\\",
-        "outputPath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\obj\\",
+        "outputPath": "f:\\NotiWebsite\\NotificationWebsite.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,6 +198,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.4.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -218,14 +224,14 @@
         }
       }
     },
-    "F:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj": {
+    "f:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj",
+        "projectUniqueName": "f:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj",
         "projectName": "NotificationWebsite",
-        "projectPath": "F:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj",
+        "projectPath": "f:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj",
         "packagesPath": "C:\\Users\\sweeppy\\.nuget\\packages\\",
-        "outputPath": "F:\\NotiWebsite\\NotificationWebsite\\obj\\",
+        "outputPath": "f:\\NotiWebsite\\NotificationWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -247,14 +253,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {
-                "projectPath": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj"
+              "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {
+                "projectPath": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj"
               },
               "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj": {
                 "projectPath": "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj"
               },
-              "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {
-                "projectPath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj"
+              "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {
+                "projectPath": "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj"
               }
             }
           }
@@ -272,6 +278,10 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -296,6 +306,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.4.1, )"
             }
           },
           "imports": [

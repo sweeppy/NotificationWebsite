@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "gnaCmywZZHqKB7YW+0184+0V3S6dU6MUEhzJe9fyScT1SDuPfHUCIH+yfIGeP1SdctnGb1Bq6oFc8IVd+1Twuw==",
+  "dgSpecHash": "J7DL8O+EEfyG9C+EQAH0Dg2aVbsdT1mFWFK2RZYxH8hH1QAfWfS8tAZIpqheZ8DL/ds5yRk15INKxRBjjEDHKg==",
   "success": true,
-  "projectFilePath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.4.1\\microsoft.identitymodel.abstractions.7.4.1.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.4.1\\microsoft.identitymodel.jsonwebtokens.7.4.1.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.logging\\7.4.1\\microsoft.identitymodel.logging.7.4.1.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.4.1\\microsoft.identitymodel.tokens.7.4.1.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.4.1\\system.identitymodel.tokens.jwt.7.4.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -21,3 +21,4 @@ C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWe
 C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\refint\NotificationWebsite.Utility.dll
 C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.pdb
 C:\Users\sweeppy\Documents\GitHub\NotificationWebSite\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\ref\NotificationWebsite.Utility.dll
+F:\NotiWebsite\NotificationWebsite.Utility\obj\Debug\net8.0\NotificationWebsite.Utility.csproj.AssemblyReference.cache

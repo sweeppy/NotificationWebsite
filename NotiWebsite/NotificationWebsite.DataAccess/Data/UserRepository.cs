@@ -15,5 +15,14 @@ namespace NotificationWebsite.DataAccess.Data
             _db.SaveChanges();
             return user;
         }
+        public User GetByEmail(string email)
+        {
+            return _db.Users.FirstOrDefault(u => u.Email == email) ?? throw new Exception("User in not found");
+        }
+
+        public User GetById(int id)
+        {
+            return _db.Users.FirstOrDefault(u => u.Id == id) ?? throw new Exception("User is not found");
+        }
     }
 }
