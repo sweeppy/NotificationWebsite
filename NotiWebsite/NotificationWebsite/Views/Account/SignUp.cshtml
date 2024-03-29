@@ -9,12 +9,18 @@
 </head>
 
 <body>
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div id="ErrorAlert" class="alert alertError poppins-extralight" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
     <div id="sign-up-win" class="main-win">
         <h3 class="h-sign-up">Enter your details:</h3>
         <a class="close-btn" asp-controller="Home" asp-action="Index">×</a>
 
-        <form method="post" class="auth-form">
-            <div asp-validation-summary="All" class="poppins-bold-italic"></div>
+        <form method="post" class="auth-form-sign-up">
+            <!--<div asp-validation-summary="All" class="poppins-bold-italic"></div>-->
             <input asp-for="Email" id="signUp_Email" name="email" class="input-field poppins-bold-italic Email-img"
                 type="text" placeholder="Enter email:" oninput="changeStateSignUpBtn()" autocomplete="off">
 
@@ -25,6 +31,9 @@
                 class="input-field poppins-bold-italic password-img" type="password" placeholder="Enter password:"
                 oninput="changeStateSignUpBtn()" autocomplete="off">
             <button type="submit" id="signUpBtn" class="auth-btn auth-btn-sign-up poppins-semibold">Sign up</button>
+            <script>
+                document.getElementById('signUpBtn').disabled = true; //make the btn disabled when opening the page
+            </script>
         </form>
 
     </div>

@@ -12,6 +12,7 @@ inputs = [
 ];
 placeholderListener(inputs);
 
+//live change placeholders
 function placeholderListener(fields) {
   fields.forEach((element) => {
     element.addEventListener("focus", function () {
@@ -28,7 +29,7 @@ function placeholderListener(fields) {
   });
 }
 
-//check that every input filled
+//check that all fields are filled
 function checkFill(inputsProp) {
   for (let element of inputsProp) {
     if (element.value.trim() === "") {
@@ -68,28 +69,4 @@ function changeAuthBtn(inputsProp, btn) {
   } else {
     btn.disabled = true;
   }
-}
-
-function Register() {
-  var user = {
-    Username: document.getElementById("signUp_username").value,
-    Mail: document.getElementById("signUp_mail").value,
-    Password: document.getElementById("signUp_password").value,
-  };
-
-  $.ajax({
-    type: "POST",
-    url: "/api/register",
-    contentType: "application/json",
-    data: JSON.stringify(user),
-    dataType: "json",
-    success: function (data) {
-      if (data.success) {
-        closeSignUp();
-      }
-    },
-    error: function (err) {
-      console.log("Register js error:", err);
-    },
-  });
 }

@@ -37,6 +37,7 @@ app.UseCors(options => options
 );
 
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

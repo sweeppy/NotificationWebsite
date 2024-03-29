@@ -9,7 +9,12 @@
 </head>
 
 <body>
-
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div id="ErrorAlert" class="alert alertError poppins-extralight" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
     <div id="login-win" class="main-win">
         <h3 class="h-login">Enter your details:</h3>
         <a class="close-btn" asp-controller="Home" asp-action="Index">×</a>
@@ -19,6 +24,9 @@
             <input id="login_password" name="password" class="input-field poppins-bold-italic password-img"
                 type="password" name="password" placeholder="Enter password:" oninput="changeStateLoginBtn()">
             <button type="submit" id="loginBtn" class="auth-btn auth-btn-login poppins-semibold">Login</button>
+            <script>
+                document.getElementById('loginBtn').disabled = true; //make the btn disabled when opening the page
+            </script>
         </form>
     </div>
 

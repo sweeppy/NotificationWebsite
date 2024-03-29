@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {}
+    "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {}
   },
   "projects": {
-    "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {
+    "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
+        "projectUniqueName": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
         "projectName": "NotificationWebsite.Utility",
-        "projectPath": "f:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
+        "projectPath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
         "packagesPath": "C:\\Users\\sweeppy\\.nuget\\packages\\",
-        "outputPath": "f:\\NotiWebsite\\NotificationWebsite.Utility\\obj\\",
+        "outputPath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -9,6 +9,18 @@
 </head>
 
 <body>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div id="successAlert" class="alert alertSuccess poppins-extralight" role="alert">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div id="ErrorAlert" class="alert alertError poppins-extralight" role="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
     <div class="main-win">
         <h2 class="poppins-extrabold h-main">Get notification</h2>
         <div class="container">

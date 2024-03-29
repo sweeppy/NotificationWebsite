@@ -231,6 +231,13 @@ body {
   align-items: center;
   margin-top: 10%;
 }
+.auth-form-sign-up{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
 
 .input-field{
   background-color: #222831;
@@ -305,4 +312,26 @@ body {
 }
 .auth-btn.disable{
   animation: disable-btn 0.5s forwards;
+}
+
+.alert{
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+  right: 2%;
+  top: 2%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  animation: alertAnim 8s forwards 1s;
+}
+
+.alertSuccess{
+  background-color: rgba(198, 235, 197, 1);
+}
+
+.alertError{
+  background-color: rgb(250, 112, 112);
 }

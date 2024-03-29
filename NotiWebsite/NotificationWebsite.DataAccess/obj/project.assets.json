@@ -4244,8 +4244,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj": {
-              "projectPath": "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj"
+            "f:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj": {
+              "projectPath": "f:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj"
             }
           }
         }
