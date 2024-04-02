@@ -20,6 +20,9 @@
         <a class="close-btn" asp-controller="Home" asp-action="Index">×</a>
 
         <form method="post" class="auth-form-sign-up">
+            <span asp-validation-for="Username" class="poppins-bold-italic white-text"></span>
+            <span asp-validation-for="Email" class="poppins-bold-italic white-text"></span>
+            <span asp-validation-for="Password" class="poppins-bold-italic white-text"></span>
             <!--<div asp-validation-summary="All" class="poppins-bold-italic"></div>-->
             <input asp-for="Email" id="signUp_Email" name="email" class="input-field poppins-bold-italic Email-img"
                 type="text" placeholder="Enter email:" oninput="changeStateSignUpBtn()" autocomplete="off">
@@ -30,9 +33,10 @@
             <input asp-for="Password" id="signUp_password" name="password"
                 class="input-field poppins-bold-italic password-img" type="password" placeholder="Enter password:"
                 oninput="changeStateSignUpBtn()" autocomplete="off">
+
             <button type="submit" id="signUpBtn" class="auth-btn auth-btn-sign-up poppins-semibold">Sign up</button>
             <script>
-                document.getElementById('signUpBtn').disabled = true; //make the btn disabled when opening the page
+                document.getElementById('signUpBtn').disabled = true; //make the btn disabled when opening or refreshing the page
             </script>
         </form>
 

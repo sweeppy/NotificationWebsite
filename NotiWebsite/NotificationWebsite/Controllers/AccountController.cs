@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using NotificationWebsite.DataAccess.Data;
+using NotificationWebsite.Models;
 using NotificationWebsite.Models.Dtos;
 
 
@@ -24,9 +25,19 @@ namespace NotificationWebsite.Controllers
         {
             return View();
         }
-        [HttpPost, AllowAnonymous]
-        public async Task<IActionResult> SignUp(RegisterDto dto)
+        [HttpPost]
+        public async Task<IActionResult> SignUp(User user)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            RegisterDto dto = new RegisterDto
+            {
+                Username = user.Username,
+                Email = user.Email,
+                Password = user.Password
+            };
             var jsonUser = JsonConvert.SerializeObject(dto);
             var content = new StringContent(jsonUser, Encoding.UTF8, "application/json");
             string url = "http://localhost:5019/api/AuthAPI/register";
@@ -37,12 +48,7 @@ namespace NotificationWebsite.Controllers
             {
                 var data = await response.Content.ReadAsStringAsync();
                 //Login with the same values
-                LoginDto loginDto = new LoginDto()
-                {
-                    Email = dto.Email,
-                    Password = dto.Password
-                };
-                return await Login(loginDto);
+                return await Login(user);
             }
             else
             {
@@ -54,15 +60,28 @@ namespace NotificationWebsite.Controllers
                 return View();
             }
         }
-
-        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
-        [HttpPost, AllowAnonymous]
-        public async Task<IActionResult> Login(LoginDto dto)
+
+        [HttpPost]
+        public async Task<IActionResult> Login(User user)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            LoginDto dto = new LoginDto
+            {
+                Email = user.Email,
+                Password = user.Password
+            };
+            /*if (User.Identity.IsAuthenticated)
+            {
+                TempData["InfoMessage"] = "You are already logged in.";
+                return RedirectToAction("Index", "Home");
+            }*/
 
             var jsonUser = JsonConvert.SerializeObject(dto);
             var content = new StringContent(jsonUser, Encoding.UTF8, "application/json");

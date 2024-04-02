@@ -19,13 +19,16 @@
         <h3 class="h-login">Enter your details:</h3>
         <a class="close-btn" asp-controller="Home" asp-action="Index">×</a>
         <form class="auth-form" method="post">
-            <input id="login_Email" name="email" class="input-field poppins-bold-italic Email-img" type="text"
-                placeholder="Enter email:" oninput="changeStateSignUpBtn()" autocomplete="off">
-            <input id="login_password" name="password" class="input-field poppins-bold-italic password-img"
-                type="password" name="password" placeholder="Enter password:" oninput="changeStateLoginBtn()">
+            <span asp-validation-for="Email" class="poppins-bold-italic white-text"></span>
+            <span asp-validation-for="Password" class="poppins-bold-italic white-text"></span>
+            <input asp-for="Email" id="login_Email" name="email" class="input-field poppins-bold-italic Email-img"
+                type="text" placeholder="Enter email:" oninput="changeStateLoginBtn()" autocomplete="off">
+            <input asp-for="Password" id="login_password" name="password"
+                class="input-field poppins-bold-italic password-img" type="password" placeholder="Enter password:"
+                oninput="changeStateLoginBtn()" autocomplete="off">
             <button type="submit" id="loginBtn" class="auth-btn auth-btn-login poppins-semibold">Login</button>
             <script>
-                document.getElementById('loginBtn').disabled = true; //make the btn disabled when opening the page
+                document.getElementById('loginBtn').disabled = true; //make the btn disabled when opening or refreshing the page
             </script>
         </form>
     </div>

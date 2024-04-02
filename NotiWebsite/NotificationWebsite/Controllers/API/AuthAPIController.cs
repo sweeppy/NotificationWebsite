@@ -26,7 +26,7 @@ namespace NotificationWebsite.Controllers.API
             _jwtService = jwtService;
         }
 
-        [HttpPost("register"), AllowAnonymous]
+        [HttpPost("register")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Register(RegisterDto dto)
@@ -42,7 +42,7 @@ namespace NotificationWebsite.Controllers.API
                 if (!ModelState.IsValid) return BadRequest(new ResponseInformation()
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
-                    ResponseMessage = "Not all fields are filled in"
+                    ResponseMessage = "Incorrect input"
                 });//Incorrect input
 
                 if (_db.Users.FirstOrDefault(u =>

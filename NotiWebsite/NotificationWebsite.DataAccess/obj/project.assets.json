@@ -4218,11 +4218,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
+      "projectUniqueName": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
       "projectName": "NotificationWebsite.DataAccess",
-      "projectPath": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
+      "projectPath": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
       "packagesPath": "C:\\Users\\sweeppy\\.nuget\\packages\\",
-      "outputPath": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\obj\\",
+      "outputPath": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4244,8 +4244,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "f:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj": {
-              "projectPath": "f:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj"
+            "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj": {
+              "projectPath": "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj"
             }
           }
         }

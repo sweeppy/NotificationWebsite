@@ -229,14 +229,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .auth-form-sign-up{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .input-field{
@@ -334,4 +334,18 @@ body {
 
 .alertError{
   background-color: rgb(250, 112, 112);
+}
+.white-text{
+  color:#EEEEEE;
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 13px;
+}
+.white-text::before{
+  content: "\2022";
+  margin-right: 5px;
+  color:#EEEEEE;
+}
+.white-text:empty{
+  display: none;
 }

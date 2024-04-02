@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Utility.Helpers;
-using Microsoft.AspNetCore.Cors;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors();
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("UsersConnection"))); // connect to UsersDb
 
