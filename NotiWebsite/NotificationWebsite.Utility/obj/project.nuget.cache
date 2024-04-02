@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "m7Q7S7yBKdJeE/D19FyaHEOMvQHmU1xAy/wiqPqiwpTlnwsUMlcV6kF8Wu3qc8sCK4ZadpTjf2iX2NXDmGxVBg==",
+  "dgSpecHash": "AEfAyhTwIFdXzEXiWSQyKoOQXO9eIi1Uz4d9Pou36xL955STmZIbpqFKVO7xeMGB6MAxX+hQpn1bI82gMQaErg==",
   "success": true,
   "projectFilePath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.3\\microsoft.aspnetcore.authorization.8.0.3.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.3\\microsoft.aspnetcore.metadata.8.0.3.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.1\\microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",

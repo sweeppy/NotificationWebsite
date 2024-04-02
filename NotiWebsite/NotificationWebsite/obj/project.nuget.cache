@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/wzWVYER9Ptmp1Z4LP2mGF65bEcuA1LaKgyf5KWIaFlU7eJAZLXFZiwfkI6qEoSA4t4rvHbgonvz+Yd6f8nXAw==",
+  "dgSpecHash": "OMMyHvH4LIL7a5ljhY7RNY0zoL2lJea74fXyOuYnKl8PCyUN5IexDHK+5dir7/gzyx/TuaAXa81qDnphfMCurA==",
   "success": true,
   "projectFilePath": "F:\\NotiWebsite\\notificationwebsite\\NotificationWebsite.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.3\\microsoft.entityframeworkcore.tools.8.0.3.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",

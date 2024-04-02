@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Utility.Helpers;
+using Microsoft.Extensions.Configuration;
+using NotificationWebsite.Utility.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,14 +10,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors();
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("UsersConnection"))); // connect to UsersDb
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ILoginValidation, CheckValidation>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 
 builder.Services.AddScoped<HttpClient>();
+
+//especially for secret jwt token, which is located in appsettings.json
+builder.Services.AddSingleton(builder.Configuration);
 
 var app = builder.Build();
 

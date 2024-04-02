@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.Net.Http;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
@@ -6,6 +7,7 @@ using Newtonsoft.Json;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
 using NotificationWebsite.Models.Dtos;
+using NotificationWebsite.Utility.Authentication;
 
 
 namespace NotificationWebsite.Controllers
@@ -14,11 +16,13 @@ namespace NotificationWebsite.Controllers
     {
         private readonly ILogger<AccountController> _logger;
         private readonly HttpClient _httpClient;
+        private readonly ILoginValidation _loginValidation;
 
-        public AccountController(ILogger<AccountController> logger, HttpClient httpClient)
+        public AccountController(ILogger<AccountController> logger, HttpClient httpClient, ILoginValidation loginValidation)
         {
             _logger = logger;
             _httpClient = httpClient;
+            _loginValidation = loginValidation;
         }
         [HttpGet]
         public IActionResult SignUp()
@@ -68,7 +72,7 @@ namespace NotificationWebsite.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(User user)
         {
-            if (!ModelState.IsValid)
+            if (!_loginValidation.IsLoginValid(user))
             {
                 return View();
             }

@@ -1,12 +1,20 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
 
 namespace NotificationWebsite.Utility.Helpers
 {
     public class JwtService : IJwtService
     {
-        private string SecureKey = "at least 256 bit secure key for jwt token";
+        private string SecureKey;
+        private IConfiguration _configuration;
+
+        public JwtService(IConfiguration configuration)
+        {
+            _configuration = configuration;
+            SecureKey = _configuration["Jwt:SecretKey"] ?? throw new InvalidOperationException("Missing JWT secret key configuration.");
+        }
         public string Generate(int id)
         {
             var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecureKey));

@@ -1,6 +1,7 @@
 {
   "dotnet.defaultSolution": "NotificationWebsite.sln",
   "cSpell.words": [
+    "appsettings",
     "ASPNETCORE",
     "crossorigin",
     "Dtos",
