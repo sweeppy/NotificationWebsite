@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.Models;
 
 namespace NotificationWebsite.DataAccess.Data
@@ -9,20 +10,20 @@ namespace NotificationWebsite.DataAccess.Data
         {
             _db = db;
         }
-        public User Create(User user)
+        public async Task<User> Create(User user)
         {
-            _db.Users.Add(user);
-            _db.SaveChanges();
+            await _db.Users.AddAsync(user);
+            await _db.SaveChangesAsync();
             return user;
         }
-        public User GetByEmail(string? email)
+        public async Task<User> GetByEmail(string? email)
         {
-            return _db.Users.FirstOrDefault(u => u.Email == email);
+            return await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
         }
 
-        public User GetById(int id)
+        public async Task<User> GetById(int id)
         {
-            return _db.Users.FirstOrDefault(u => u.Id == id);
+            return await _db.Users.FirstOrDefaultAsync(u => u.Id == id);
         }
     }
 }

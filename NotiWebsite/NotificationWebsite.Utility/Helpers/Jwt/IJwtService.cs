@@ -1,11 +1,10 @@
 using System.IdentityModel.Tokens.Jwt;
 
-namespace NotificationWebsite.Utility.Helpers
+namespace NotificationWebsite.Utility.Helpers.Jwt
 {
     public interface IJwtService
     {
         public string Generate(int id);
 
-        public JwtSecurityToken Verify(string jwt);
     }
 }

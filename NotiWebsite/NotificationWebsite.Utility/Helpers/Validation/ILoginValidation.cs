@@ -1,6 +1,6 @@
 using NotificationWebsite.Models;
 
-namespace NotificationWebsite.Utility.Authentication
+namespace NotificationWebsite.Utility.Helpers.Validation
 {
     public interface ILoginValidation
     {

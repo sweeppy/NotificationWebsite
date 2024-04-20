@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AEfAyhTwIFdXzEXiWSQyKoOQXO9eIi1Uz4d9Pou36xL955STmZIbpqFKVO7xeMGB6MAxX+hQpn1bI82gMQaErg==",
+  "dgSpecHash": "OcyL35npb7zJAY9x+hP3xGyFxz7/EtFkpYkRCE5XgCL6xCph93dtTeQg+8iPy+hNFY32iO0lRNub3SLxVEiSrQ==",
   "success": true,
   "projectFilePath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.4\\microsoft.aspnetcore.authentication.jwtbearer.8.0.4.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.3\\microsoft.aspnetcore.authorization.8.0.3.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.3\\microsoft.aspnetcore.metadata.8.0.3.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
@@ -15,6 +16,8 @@
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.4.1\\microsoft.identitymodel.abstractions.7.4.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.4.1\\microsoft.identitymodel.jsonwebtokens.7.4.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.logging\\7.4.1\\microsoft.identitymodel.logging.7.4.1.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.4.1\\microsoft.identitymodel.tokens.7.4.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.4.1\\system.identitymodel.tokens.jwt.7.4.1.nupkg.sha512"
   ],

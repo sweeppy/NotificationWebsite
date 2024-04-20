@@ -1,10 +1,12 @@
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.CookiePolicy;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
 using NotificationWebsite.Models.Dtos;
-using NotificationWebsite.Utility.Helpers;
+using NotificationWebsite.Models.Models.Dtos;
+using NotificationWebsite.Utility.Configuration.Jwt;
+using NotificationWebsite.Utility.Helpers.Jwt;
 
 namespace NotificationWebsite.Controllers.API
 {
@@ -17,13 +19,18 @@ namespace NotificationWebsite.Controllers.API
         private readonly ApplicationDbContext _db;
         private readonly IJwtService _jwtService;
 
+        private readonly JwtConfig _jwtConfig;
 
-        public AuthAPIController(IUserRepository repository, ApplicationDbContext db, IJwtService jwtService, ILogger<AuthAPIController> logger)
+
+        public AuthAPIController(IUserRepository repository, ApplicationDbContext db,
+         IJwtService jwtService, ILogger<AuthAPIController> logger,
+         IOptionsMonitor<JwtConfig> optionsMonitor)
         {
             _logger = logger;
             _repository = repository;
             _db = db;
             _jwtService = jwtService;
+            _jwtConfig = optionsMonitor.CurrentValue;
         }
 
         [HttpPost("register")]
@@ -33,16 +40,16 @@ namespace NotificationWebsite.Controllers.API
         {
             try
             {
-                if (dto == null) return BadRequest(new ResponseInformation()
+                if (dto == null) return BadRequest(new RegisterRequestResponse()
                 {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    ResponseMessage = "Not all fields are filled in"
+                    Result = false,
+                    Message = "Not all fields are filled in"
                 });//user fields empty
 
-                if (!ModelState.IsValid) return BadRequest(new ResponseInformation()
+                if (!ModelState.IsValid) return BadRequest(new RegisterRequestResponse()
                 {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    ResponseMessage = "Incorrect input"
+                    Result = false,
+                    Message = "Incorrect input"
                 });//Incorrect input
 
                 if (_db.Users.FirstOrDefault(u =>
@@ -50,10 +57,10 @@ namespace NotificationWebsite.Controllers.API
                                             dto.Email != null &&
                                             u.Email.ToLower() == dto.Email.ToLower()) != null)//This user is already in the DB
                 {
-                    return BadRequest(new ResponseInformation()
+                    return BadRequest(new RegisterRequestResponse()
                     {
-                        StatusCode = StatusCodes.Status400BadRequest,
-                        ResponseMessage = "User with this email is already registered"
+                        Result = false,
+                        Message = "User with this email is already registered"
                     });
                 }
 
@@ -63,15 +70,22 @@ namespace NotificationWebsite.Controllers.API
                     Email = dto.Email,
                     Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)//Password hash
                 };
-                return Created("success", _repository.Create(user));
+                _repository.Create(user);
+                var token = _jwtService.Generate(user.Id);
+                return Ok(new RegisterRequestResponse()
+                {
+                    Result = true,
+                    Token = token,
+                    Message = "Successful registration!"
+                });
             }
             catch (Exception e)
             {
                 _logger.LogError($"Register error: {e.Message}");
-                return BadRequest(new ResponseInformation()
+                return BadRequest(new RegisterRequestResponse()
                 {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    ResponseMessage = "Something went wrong"
+                    Result = false,
+                    Message = "Something went wrong"
                 });
             }
 
@@ -80,62 +94,34 @@ namespace NotificationWebsite.Controllers.API
         [HttpPost("login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Login(LoginDto dto)
+        public async Task<IActionResult> Login(LoginDto dto)
         {
 
-            User user = _repository.GetByEmail(dto.Email);
+            User user = await _repository.GetByEmail(dto.Email);
 
             if (user == null || user.Email == null || user.Username == null || user.Password == null)
             {
-                return BadRequest(new ResponseInformation()
+                return BadRequest(new LoginRequestResponse()
                 {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    ResponseMessage = "Wrong email"
+                    Result = false,
+                    Message = "Wrong email"
                 });
             }
 
-            if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.Password)) return BadRequest(new ResponseInformation()
+            if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.Password)) return BadRequest(new LoginRequestResponse()
             {
-                StatusCode = StatusCodes.Status400BadRequest,
-                ResponseMessage = "Wrong password"
-            });//important that key is "message"
-
-            var jwt = _jwtService.Generate(user.Id);
-
-            Response.Cookies.Append("jwt", jwt, new CookieOptions
-            {
-                HttpOnly = true         //!PROTECT  (to give access only for BackEnd(not for FrontEnd))
+                Result = false,
+                Message = "Wrong password"
             });
 
-            return Ok(new ResponseInformation()
+            var token = _jwtService.Generate(user.Id);
+
+            return Ok(new LoginRequestResponse()
             {
-                StatusCode = StatusCodes.Status200OK,
-                ResponseMessage = "Welcome to our site!"
+                Result = true,
+                Token = token,
+                Message = "Welcome to our site!"
             });
-        }
-
-        [HttpGet("user"), Authorize]
-        public IActionResult GetUser()
-        {
-            try
-            {
-                var jwt = Request.Cookies["jwt"];
-
-                if (jwt == null) return Unauthorized();
-
-                var token = _jwtService.Verify(jwt);
-
-                int userId = int.Parse(token.Issuer);
-
-                var user = _repository.GetById(userId);
-
-                return Ok(user);
-            }
-            catch (Exception)
-            {
-                return
-                Unauthorized();
-            }
         }
     }
 }

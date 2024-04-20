@@ -1,13 +1,10 @@
-using System.ComponentModel.DataAnnotations;
-using System.Net.Http;
 using System.Text;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
 using NotificationWebsite.Models.Dtos;
-using NotificationWebsite.Utility.Authentication;
+using NotificationWebsite.Models.Models.Dtos;
+using NotificationWebsite.Utility.Helpers.Validation;
 
 
 namespace NotificationWebsite.Controllers
@@ -48,19 +45,19 @@ namespace NotificationWebsite.Controllers
 
             var response = await _httpClient.PostAsync(url, content);
 
-            if (response.IsSuccessStatusCode)
+            var data = await response.Content.ReadAsStringAsync();
+            var registerResponse = JsonConvert.DeserializeObject<RegisterRequestResponse>(data);
+            if (registerResponse.Result)
             {
-                var data = await response.Content.ReadAsStringAsync();
+                _logger.LogInformation(registerResponse.Message);
                 //Login with the same values
                 return await Login(user);
             }
             else
             {
-                var error = await response.Content.ReadAsStringAsync();
-                var errorMessage = JsonConvert.DeserializeObject<ResponseInformation>(error);
                 // Handle registration error
-                ModelState.AddModelError("RegistrationError", errorMessage.ResponseMessage); // Add error message to model state
-                TempData["ErrorMessage"] = errorMessage.ResponseMessage;
+                ModelState.AddModelError("RegistrationError", registerResponse.Message); // Add error message to model state
+                TempData["ErrorMessage"] = registerResponse.Message;
                 return View();
             }
         }
@@ -81,11 +78,6 @@ namespace NotificationWebsite.Controllers
                 Email = user.Email,
                 Password = user.Password
             };
-            /*if (User.Identity.IsAuthenticated)
-            {
-                TempData["InfoMessage"] = "You are already logged in.";
-                return RedirectToAction("Index", "Home");
-            }*/
 
             var jsonUser = JsonConvert.SerializeObject(dto);
             var content = new StringContent(jsonUser, Encoding.UTF8, "application/json");
@@ -93,17 +85,21 @@ namespace NotificationWebsite.Controllers
 
             var response = await _httpClient.PostAsync(url, content);
 
+            var data = await response.Content.ReadAsStringAsync();
+            var loginResponse = JsonConvert.DeserializeObject<LoginRequestResponse>(data);
+
             if (response.IsSuccessStatusCode)
             {
-                var data = await response.Content.ReadAsStringAsync();
-                TempData["SuccessMessage"] = "Welcome to our site!";
+                TempData["SuccessMessage"] = loginResponse.Message;
+
+                HttpContext.Response.Cookies
+                    .Append("L_Cookie", loginResponse.Token, new CookieOptions { HttpOnly = true });//add token to cookies
+
                 return RedirectToAction("Index", "Home");
             }
             else
             {
-                var error = await response.Content.ReadAsStringAsync();
-                var errorMessage = JsonConvert.DeserializeObject<ResponseInformation>(error);
-                TempData["ErrorMessage"] = $"{errorMessage.ResponseMessage}";
+                TempData["ErrorMessage"] = $"{loginResponse.Message}";
 
                 return View("Login");
             }

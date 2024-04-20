@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.DataAccess.Data;
-using NotificationWebsite.Utility.Helpers;
-using Microsoft.Extensions.Configuration;
-using NotificationWebsite.Utility.Authentication;
+using NotificationWebsite.Utility.Configuration.Jwt;
+using NotificationWebsite.Utility.Helpers.Validation;
+using NotificationWebsite.Utility.Helpers.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,12 +15,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILoginValidation, CheckValidation>();
+
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));//get jwt sections from appsettings
 
 builder.Services.AddScoped<HttpClient>();
 
-//especially for secret jwt token, which is located in appsettings.json
-builder.Services.AddSingleton(builder.Configuration);
+var jwtAuthenticationService = new JwtConfiguration();
+jwtAuthenticationService.ConfigureJwtAuthentication(builder.Services, builder.Configuration);
+//builder.Services.AddSingleton(builder.Configuration);
 
 var app = builder.Build();
 

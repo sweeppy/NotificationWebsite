@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {}
+    "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {}
   },
   "projects": {
-    "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {
+    "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
+        "projectUniqueName": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
         "projectName": "NotificationWebsite.DataAccess",
-        "projectPath": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
+        "projectPath": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj",
         "packagesPath": "C:\\Users\\sweeppy\\.nuget\\packages\\",
-        "outputPath": "f:\\NotiWebsite\\NotificationWebsite.DataAccess\\obj\\",
+        "outputPath": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -154,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OMMyHvH4LIL7a5ljhY7RNY0zoL2lJea74fXyOuYnKl8PCyUN5IexDHK+5dir7/gzyx/TuaAXa81qDnphfMCurA==",
+  "dgSpecHash": "3nzniAdIEmAkve75Nrihu8Q3kE4XzJYKUTs2gdPL9XOzY0XRlX1o2HPLmEiH1YFoODVClWwmV2cdGPYWaev7oQ==",
   "success": true,
   "projectFilePath": "F:\\NotiWebsite\\notificationwebsite\\NotificationWebsite.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\sweeppy\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.4\\microsoft.aspnetcore.authentication.jwtbearer.8.0.4.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.3\\microsoft.aspnetcore.authorization.8.0.3.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
@@ -50,8 +51,8 @@
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.4.1\\microsoft.identitymodel.abstractions.7.4.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.4.1\\microsoft.identitymodel.jsonwebtokens.7.4.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.logging\\7.4.1\\microsoft.identitymodel.logging.7.4.1.nupkg.sha512",
-    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0\\microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
-    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
+    "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.4.1\\microsoft.identitymodel.tokens.7.4.1.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
