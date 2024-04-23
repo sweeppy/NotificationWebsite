@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\vk.png"
     },
     {
+      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\redirection.js",
+      "PackagePath": "staticwebassets\\js\\redirection.js"
+    },
+    {
       "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
