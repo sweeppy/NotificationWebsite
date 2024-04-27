@@ -9,12 +9,6 @@
 </head>
 
 <body>
-    @if (TempData["ErrorMessage"] != null)
-    {
-        <div id="ErrorAlert" class="alert alertError poppins-extralight" role="alert">
-            @TempData["ErrorMessage"]
-        </div>
-    }
     <div id="login-win" class="main-win">
         <h3 class="h-login">Enter your details:</h3>
         <a class="close-btn" asp-controller="Home" asp-action="Index">×</a>

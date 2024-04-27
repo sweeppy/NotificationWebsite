@@ -1,0 +1,110 @@
+@model NotificationWebsite.Models.User
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div class="container-row">
+        <div class="notification-list">
+            <div class="header-notification-list">
+                <div class="search-container">
+                    <input type="text" class="search-input poppins-light-italic" placeholder="Search...">
+                </div>
+                <button class="menu" onclick="">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30"
+                        style="fill:#FFFFFF;">
+                        <path
+                            d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="separator"></div>
+            <div class="scrollable-list-area">
+                @if (Model.Notifications != null)
+                {
+                    foreach (var notification in Model.Notifications)
+                    {
+                        string header = notification.Header.Length >= 12 ? notification.Header.Substring(0, 12) + "..." :
+                        notification.Header;
+                        string status = notification.Status.ToLower();
+                        <div class="notification-block"
+                            onclick="showNotificationInfo('@notification.Status', '@notification.SocialNetwork', '@notification.Message', '@notification.Header', '@notification.Date')">
+                            <div class="notification-status">
+                                @switch (status)
+                                {
+                                    case "planned":
+                                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="19" cy="19" r="19" fill="#EEE4B1" />
+                                            <path
+                                                d="M10.4697 18.4697C10.1768 18.7626 10.1768 19.2374 10.4697 19.5303L15.2427 24.3033C15.5355 24.5962 16.0104 24.5962 16.3033 24.3033C16.5962 24.0104 16.5962 23.5355 16.3033 23.2426L12.0607 19L16.3033 14.7574C16.5962 14.4645 16.5962 13.9896 16.3033 13.6967C16.0104 13.4038 15.5355 13.4038 15.2427 13.6967L10.4697 18.4697ZM27.3201 18.25L11 18.25V19.75L27.3201 19.75V18.25Z"
+                                                fill="black" />
+                                        </svg>
+                                        break;
+                                    case "sent":
+                                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="19" cy="19" r="19" fill="#17B794" />
+                                            <path d="M14.4399 18.9999L18.4399 23.1799L24.4399 14.4399" stroke="black" stroke-width="2"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+
+                                        break;
+                                    case "canceled":
+                                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="19" cy="19" r="19" fill="#FF7C97" />
+                                            <rect x="14" y="16.1211" width="3" height="12" rx="1.5" transform="rotate(-45 14 16.1211)"
+                                                fill="black" />
+                                            <rect x="22.4853" y="14" width="3" height="12" rx="1.5" transform="rotate(45 22.4853 14)"
+                                                fill="black" />
+                                        </svg>
+
+
+                                        break;
+                                }
+                            </div>
+                            <div class="notification-block-information">
+                                <div class="notification-header poppins-bold-italic">@header</div>
+                                <div class="notification-body ">@notification.Message</div>
+                            </div>
+
+
+                        </div>
+                    }
+
+                }
+                else
+                {
+                    <div class="notification-blocks-empty poppins-bold-italic">
+                        You don't have any notifications yet.
+                    </div>
+                }
+            </div>
+            <svg class="add-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50ZM22.7273 19.6021C22.7273 18.5038 23.6176 17.6134 24.7159 17.6134C25.8142 17.6134 26.7045 18.5038 26.7045 19.6021V23.2954H30.3977C31.496 23.2954 32.3863 24.1858 32.3863 25.284C32.3863 26.3823 31.496 27.2727 30.3977 27.2727H26.7045V30.9657C26.7045 32.064 25.8142 32.9543 24.7159 32.9543C23.6176 32.9543 22.7273 32.064 22.7273 30.9657V27.2727H19.0341C17.9358 27.2727 17.0454 26.3823 17.0454 25.284C17.0454 24.1858 17.9358 23.2954 19.0341 23.2954H22.7273V19.6021Z"
+                    fill="white" />
+            </svg>
+        </div>
+        <div class="notification-information-bg">
+
+        </div>
+
+        <div id="modal-container" class="modal-container">
+            <div id="modal" class="modal-add-notification">
+                <span class="close-modal-add-notification">&times;</span>
+                <div class="modal-left-content">
+
+                </div>
+                <div class="modal-right-content">
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

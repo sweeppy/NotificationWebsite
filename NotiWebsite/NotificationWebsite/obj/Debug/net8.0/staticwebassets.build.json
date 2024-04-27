@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IwghIL0Z6sX2znNaKy2BPs/0G5XB2RJd8R+N4nJmf+Y=",
+  "Hash": "zWJS7xqGKZeGuBg5rbxKfxt4x6wKCdwbEHLdpHUDaEA=",
   "Source": "NotificationWebsite",
   "BasePath": "_content/NotificationWebsite",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\animation.css"
+    },
+    {
+      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\main.css",
+      "SourceId": "NotificationWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\",
+      "BasePath": "_content/NotificationWebsite",
+      "RelativePath": "css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
       "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\site.css",
@@ -150,6 +169,25 @@
       "OriginalItemSpec": "wwwroot\\images\\gmail.png"
     },
     {
+      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\menu.png",
+      "SourceId": "NotificationWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\",
+      "BasePath": "_content/NotificationWebsite",
+      "RelativePath": "images/menu.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\menu.png"
+    },
+    {
       "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\password.png",
       "SourceId": "NotificationWebsite",
       "SourceType": "Discovered",
@@ -167,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\password.png"
+    },
+    {
+      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\sentIcon.svg",
+      "SourceId": "NotificationWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\",
+      "BasePath": "_content/NotificationWebsite",
+      "RelativePath": "images/sentIcon.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\sentIcon.svg"
     },
     {
       "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\telegram.png",
@@ -224,6 +281,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\vk.png"
+    },
+    {
+      "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\main.js",
+      "SourceId": "NotificationWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\",
+      "BasePath": "_content/NotificationWebsite",
+      "RelativePath": "js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
       "Identity": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\redirection.js",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K6MRSGi8i734MT8qkLoX8CqF7LbcZCOGSvwfidVu7EYJfavUT19wtNgt5Y1wcoX3f7UBNIGLs0DCKiqS0naWgQ==",
+  "dgSpecHash": "3nzniAdIEmAkve75Nrihu8Q3kE4XzJYKUTs2gdPL9XOzY0XRlX1o2HPLmEiH1YFoODVClWwmV2cdGPYWaev7oQ==",
   "success": true,
-  "projectFilePath": "F:\\NotiWebsite\\NotificationWebsite\\NotificationWebsite.csproj",
+  "projectFilePath": "F:\\NotiWebsite\\notificationwebsite\\NotificationWebsite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sweeppy\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\sweeppy\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

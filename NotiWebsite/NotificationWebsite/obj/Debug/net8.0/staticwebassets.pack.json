@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\animation.css"
     },
     {
+      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
       "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -25,8 +29,16 @@
       "PackagePath": "staticwebassets\\images\\gmail.png"
     },
     {
+      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\menu.png",
+      "PackagePath": "staticwebassets\\images\\menu.png"
+    },
+    {
       "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\password.png",
       "PackagePath": "staticwebassets\\images\\password.png"
+    },
+    {
+      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\sentIcon.svg",
+      "PackagePath": "staticwebassets\\images\\sentIcon.svg"
     },
     {
       "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\telegram.png",
@@ -39,6 +51,10 @@
     {
       "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\vk.png",
       "PackagePath": "staticwebassets\\images\\vk.png"
+    },
+    {
+      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
       "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\redirection.js",
