@@ -9,51 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NotificationWebsite
 build_property.RootNamespace = NotificationWebsite
-build_property.ProjectDir = F:\NotiWebsite\notificationwebsite\
+build_property.ProjectDir = F:\NotiWebsite\NotificationWebsite\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = F:\NotiWebsite\notificationwebsite
+build_property.MSBuildProjectDirectory = F:\NotiWebsite\NotificationWebsite
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/NotiWebsite/notificationwebsite/Views/Account/Login.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/Account/SignUp.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/Account/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/Home/Index.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/Main/Home.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/Main/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/Shared/Error.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/Shared/_Notification.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/_ViewImports.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/_ViewStart.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NotiWebsite/notificationwebsite/Views/Shared/_Layout.cshtml]
+[F:/NotiWebsite/NotificationWebsite/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9pv13j9o3n

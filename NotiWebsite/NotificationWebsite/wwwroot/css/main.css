@@ -224,7 +224,7 @@
     top: 50%;  
     left: 50%;  
     transform: translate(-50%, -50%);  
-    width: 30%;  
+    width: 40%;  
     height: 50%;  
     border-radius: 10px;
     z-index: 2;
@@ -235,11 +235,78 @@
 .modal-left-content {
     display: flex;
     width: 40%; 
+    flex-direction: column;
+    overflow: hidden;
     background-color: #76ABAE;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
 }
+
+.add-notification-header{
+    color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.mg-t-5{
+    margin-top: 5%;
+}
+.mg-l-8{
+    margin-left: 8%;
+}
+.add-animated-icon{
+    margin-top: 11%;
+    margin-right: 10%;
+    animation: jump 6s ease-in-out infinite;
+}
+
+.title-field
+{
+    color: #EEEEEE;
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-top: 10%;
+}
+.add-input-title{
+    display: flex;
+    margin-top: 1%;
+    margin-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 8%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.1s;
+    box-shadow: 1px 1px 5px #ccc inset;
+}
+.add-input-title:focus{
+    height: 9%;
+}
+
+.add-input-message{
+    text-align: start;
+    display: flex;
+    margin-right: 5%;
+    margin-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 35%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.1s;
+    box-shadow: 1px 1px 5px #ccc inset;
+    resize: vertical;
+    overflow-y: auto;
+}
+.add-input-message:focus{
+    height: 36%;
+}
+
 
 .modal-right-content {
     display: flex;
@@ -249,7 +316,6 @@
     border-bottom-right-radius: 10px;
     border: none;
 }
-
 
 .close-modal-add-notification {
     color: #31363F;
