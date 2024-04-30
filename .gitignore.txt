@@ -254,4 +254,11 @@ ClientBin
 [Ss]tyle[Cc]op.*
 ~$*
 *.dbmdl
+М
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
 
