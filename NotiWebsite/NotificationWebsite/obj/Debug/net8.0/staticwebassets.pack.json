@@ -1,311 +1,311 @@
 {
   "Files": [
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NotificationWebsite.bundle.scp.css",
-      "PackagePath": "staticwebassets\\NotificationWebsite.bundle.scp.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/obj/Debug/net8.0/scopedcss/projectbundle/NotificationWebsite.bundle.scp.css",
+      "PackagePath": "staticwebassets/NotificationWebsite.bundle.scp.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\animation.css",
-      "PackagePath": "staticwebassets\\css\\animation.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/css/animation.css",
+      "PackagePath": "staticwebassets/css/animation.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\main.css",
-      "PackagePath": "staticwebassets\\css\\main.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/css/main.css",
+      "PackagePath": "staticwebassets/css/main.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\Email.png",
-      "PackagePath": "staticwebassets\\images\\Email.png"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/images/Email.png",
+      "PackagePath": "staticwebassets/images/Email.png"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\gmail.png",
-      "PackagePath": "staticwebassets\\images\\gmail.png"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/images/gmail.png",
+      "PackagePath": "staticwebassets/images/gmail.png"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\menu.png",
-      "PackagePath": "staticwebassets\\images\\menu.png"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/images/menu.png",
+      "PackagePath": "staticwebassets/images/menu.png"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\password.png",
-      "PackagePath": "staticwebassets\\images\\password.png"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/images/password.png",
+      "PackagePath": "staticwebassets/images/password.png"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\sentIcon.svg",
-      "PackagePath": "staticwebassets\\images\\sentIcon.svg"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/images/sentIcon.svg",
+      "PackagePath": "staticwebassets/images/sentIcon.svg"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\telegram.png",
-      "PackagePath": "staticwebassets\\images\\telegram.png"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/images/telegram.png",
+      "PackagePath": "staticwebassets/images/telegram.png"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\user.png",
-      "PackagePath": "staticwebassets\\images\\user.png"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/images/user.png",
+      "PackagePath": "staticwebassets/images/user.png"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\images\\vk.png",
-      "PackagePath": "staticwebassets\\images\\vk.png"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/images/vk.png",
+      "PackagePath": "staticwebassets/images/vk.png"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\main.js",
-      "PackagePath": "staticwebassets\\js\\main.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\redirection.js",
-      "PackagePath": "staticwebassets\\js\\redirection.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/js/redirection.js",
+      "PackagePath": "staticwebassets/js/redirection.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bootstrap"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "F:\\NotiWebsite\\notificationwebsite\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+      "Id": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NotificationWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.NotificationWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.NotificationWebsite.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.NotificationWebsite.props",
       "PackagePath": "build\\NotificationWebsite.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.NotificationWebsite.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.NotificationWebsite.props",
       "PackagePath": "buildMultiTargeting\\NotificationWebsite.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.NotificationWebsite.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.NotificationWebsite.props",
       "PackagePath": "buildTransitive\\NotificationWebsite.props"
     }
   ],

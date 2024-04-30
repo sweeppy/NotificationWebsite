@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qmhDTPtKaDT7KmGGH5D+IGhGteaJpz2g7pIzMxA7zU7MpF3lgPfF18lB+7vo8JRuEME5WRrgF2Mo4eNOkrd8jw==",
+  "dgSpecHash": "YsvrUMVIME6QpxCqIOhoVKCKjzg/jv5rDAmy0/OHilBkvDPZDkS+4hc2//G6NwBXqq+QsHFXuDMRagWnPAEf/w==",
   "success": true,
-  "projectFilePath": "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj",
+  "projectFilePath": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite.Models/NotificationWebsite.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -4440,46 +4440,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sweeppy\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/vladimirkonotopov/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NotiWebsite\\notificationwebsite\\NotificationWebsite.csproj",
+      "projectUniqueName": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/NotificationWebsite.csproj",
       "projectName": "NotificationWebsite",
-      "projectPath": "F:\\NotiWebsite\\notificationwebsite\\NotificationWebsite.csproj",
-      "packagesPath": "C:\\Users\\sweeppy\\.nuget\\packages\\",
-      "outputPath": "F:\\NotiWebsite\\notificationwebsite\\obj\\",
+      "projectPath": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/NotificationWebsite.csproj",
+      "packagesPath": "/Users/vladimirkonotopov/.nuget/packages/",
+      "outputPath": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\sweeppy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/vladimirkonotopov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj": {
-              "projectPath": "F:\\NotiWebsite\\NotificationWebsite.DataAccess\\NotificationWebsite.DataAccess.csproj"
+            "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite.DataAccess/NotificationWebsite.DataAccess.csproj": {
+              "projectPath": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite.DataAccess/NotificationWebsite.DataAccess.csproj"
             },
-            "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj": {
-              "projectPath": "F:\\NotiWebsite\\NotificationWebsite.Models\\NotificationWebsite.Models.csproj"
+            "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite.Models/NotificationWebsite.Models.csproj": {
+              "projectPath": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite.Models/NotificationWebsite.Models.csproj"
             },
-            "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj": {
-              "projectPath": "F:\\NotiWebsite\\NotificationWebsite.Utility\\NotificationWebsite.Utility.csproj"
+            "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite.Utility/NotificationWebsite.Utility.csproj": {
+              "projectPath": "/Users/vladimirkonotopov/Desktop/VS/NotiWebsite/NotificationWebsite.Utility/NotificationWebsite.Utility.csproj"
             }
           }
         }
@@ -4488,6 +4480,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4558,7 +4555,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
