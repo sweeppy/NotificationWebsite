@@ -1,5 +1,3 @@
-using System.IdentityModel.Tokens.Jwt;
-
 namespace NotificationWebsite.Utility.Helpers.Jwt
 {
     public interface IJwtService

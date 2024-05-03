@@ -11,11 +11,11 @@ namespace NotificationWebsite.Utility.Configuration.Jwt
         public void ConfigureJwtAuthentication(IServiceCollection services, IConfiguration configuration)
         {
             services.AddAuthentication(options =>
-        {
-            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        }).
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).
         AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
         {
             var secretKey = Encoding.UTF8.GetBytes(configuration.GetSection("JwtConfig:SecretKey").Value);

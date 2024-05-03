@@ -1,3 +1,14 @@
+const modalContainer = document.getElementById("modal-container");
+const modal = document.getElementById("modal");
+const addIcon = document.querySelector(".add-icon");
+const closeModal = document.querySelector(".close-modal-add-notification");
+const chosenIcon_vk = document.getElementById('chosen-vk');
+const chosenIcon_telegram = document.getElementById('chosen-telegram')
+const chosenIcon_gmail = document.getElementById('chosen-gmail')
+const vkItem = document.getElementById('vk-item');
+const gmailItem = document.getElementById('gmail-item');
+const telegramItem = document.getElementById('telegram-item')
+
 document.addEventListener("DOMContentLoaded", function () {
   var notificationStatusElements = document.querySelectorAll(
     ".notification-status"
@@ -33,32 +44,27 @@ function showNotificationInfo(status, socialNetwork, message, header, date) {
   notificationInfo.style.display = "flex";
   notificationInfo.classList.add("flex-column");
 
-  var notificationHeader = document.querySelector(
+  const notificationHeader = document.querySelector(
     ".header-notification-information"
   );
   notificationHeader.classList.remove("show-notification-header-animation");
   void notificationHeader.offsetWidth;
   notificationHeader.classList.add("show-notification-header-animation");
 
-  var notificationMessage = document.querySelector(
+  const notificationMessage = document.querySelector(
     ".notification-information-message"
   );
   notificationMessage.classList.remove("show-notification-message-animation");
   void notificationMessage.offsetWidth;
   notificationMessage.classList.add("show-notification-message-animation");
 
-  var notificationSocial = document.querySelector(
+  const notificationSocial = document.querySelector(
     ".notification-information-social"
   );
   notificationSocial.classList.remove("show-notification-social-animation");
   void notificationSocial.offsetWidth;
   notificationSocial.classList.add("show-notification-social-animation");
 }
-
-const modalContainer = document.getElementById("modal-container");
-const modal = document.getElementById("modal");
-const addIcon = document.querySelector(".add-icon");
-const closeModal = document.querySelector(".close-modal-add-notification");
 
 addIcon.onclick = function () {
   modalContainer.style.display = "block";
@@ -74,3 +80,18 @@ closeModal.onclick = function () {
     modal.classList.remove("close-modal-win-animation");
   }, 400);
 };
+
+function Chosen(iconId, itemId){
+  chosenIcon_gmail.style.visibility = "hidden";
+  chosenIcon_telegram.style.visibility = "hidden";
+  chosenIcon_vk.style.visibility = "hidden";
+  chosenIcon = document.getElementById(iconId);
+  chosenIcon.style.visibility = "visible";
+
+  telegramItem.classList.remove('chosen');
+  vkItem.classList.remove('chosen');
+  gmailItem.classList.remove('chosen');
+  chosenItem = document.getElementById(itemId);
+  chosenItem.classList.add('chosen');
+}
+

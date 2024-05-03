@@ -98,18 +98,17 @@
                 <span class="close-modal-add-notification">&times;</span>
                 <div class="modal-left-content">
                     <div class="add-notification-header">
-                        <h4 class="mg-t-5 p-md-2 poppins-semibold">Add<br>Notification
+                        <h4 class="mg-t-5 modal-win-header poppins-semibold">Add<br>Notification
                         </h4>
-                        <svg class="add-animated-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="19" cy="19" r="18" stroke="#EEEEEE" stroke-width="2" />
-                            <rect x="12.5" y="20" width="3" height="12" rx="1.5" transform="rotate(-90 12.5 20)"
-                                fill="#EEEEEE" />
-                            <rect x="17.0002" y="12.5" width="3" height="12" rx="1.5" fill="#EEEEEE" />
-                        </svg>
+<svg class="add-animated-icon" width="30px" height="30px" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="19" cy="19" r="18" stroke="#EEEEEE" stroke-width="2" />
+  <rect x="12.5" y="20" width="3" height="12" rx="1.5" transform="rotate(-90 12.5 20)" fill="#EEEEEE" />
+  <rect x="17.0002" y="12.5" width="3" height="12" rx="1.5" fill="#EEEEEE" />
+</svg>
+
 
                     </div>
-                    <h8 class="mg-l-8 title-field poppins-bold-italic">Title</h8>
+                    <h8 class="mg-l-8 mg-t-5 title-field poppins-bold-italic">Title</h8>
                     <input type="text" class="mg-l-8 add-input-title poppins-medium-italic">
                     <h8 class="mg-l-8 title-field poppins-bold-italic">Message</h8>
                     <textarea class="mg-l-8 add-ta-message poppins-medium-italic"></textarea>
@@ -117,7 +116,7 @@
                 </div>
                 <div class="modal-right-content">
                     <div class="choose-socials">
-                        <div class="choose-item">
+                        <div id="vk-item" class="choose-item" onclick="Chosen('chosen-vk', 'vk-item')">
                             <svg class="choose-social-icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.1813 0H24.8385C35.4865 0 38 2.53333 38 13.1813V24.8385C38 35.4865 35.4667 38 24.8187 38H13.1615C2.51354 38 0 35.4667 0 24.8187V13.1615C0 2.53333 2.53333 0 13.1813 0Z" fill="#5181B8"/>
 <mask id="mask0_3_49" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="38" height="38">
@@ -128,13 +127,12 @@
 </g>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M31.1125 13.0823C31.2907 12.4885 31.1125 12.0729 30.2813 12.0729H27.5105C26.798 12.0729 26.4813 12.4489 26.3032 12.8646C26.3032 12.8646 24.898 16.3083 22.899 18.525C22.2459 19.1781 21.9688 19.376 21.6125 19.376C21.4344 19.376 21.1771 19.1781 21.1771 18.5844V13.0823C21.1771 12.3698 20.9792 12.0729 20.3855 12.0729H16.0313C15.5959 12.0729 15.3188 12.4094 15.3188 12.7062C15.3188 13.3792 16.3084 13.5375 16.4271 15.3979V19.475C16.4271 20.3656 16.2688 20.5239 15.9125 20.5239C14.9823 20.5239 12.6865 17.0802 11.3407 13.1219C11.0636 12.3896 10.8063 12.0729 10.0938 12.0729H7.32296C6.53129 12.0729 6.37296 12.4489 6.37296 12.8646C6.37296 13.5969 7.30316 17.2385 10.7469 22.0479C13.0427 25.3333 16.2688 27.1146 19.198 27.1146C20.9594 27.1146 21.1771 26.7187 21.1771 26.0458V23.5521C21.1771 22.7604 21.3355 22.6021 21.9094 22.6021C22.325 22.6021 23.0177 22.8 24.6605 24.3833C26.5407 26.2635 26.8573 27.1146 27.9063 27.1146H30.6771C31.4688 27.1146 31.8646 26.7187 31.6271 25.9469C31.3698 25.175 30.4792 24.0469 29.2917 22.701C28.6386 21.9292 27.6688 21.1177 27.3917 20.7021C26.9761 20.1677 27.0948 19.9302 27.3917 19.475C27.3917 19.4552 30.7761 14.7052 31.1125 13.0823Z" fill="white"/>
                             </svg>
-                            <svg class="chosen-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="chosen-vk" class="chosen-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="6" cy="6" r="6" fill="#D9D9D9"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82107 2.05309C8.49457 1.91188 8.11541 2.06208 7.9742 2.38858L5.70142 7.64361L4.09955 6.04174C3.84801 5.79021 3.44019 5.79021 3.18865 6.04174C2.93712 6.29328 2.93712 6.7011 3.18865 6.95264L5.31128 9.07527C5.33342 9.09741 5.35677 9.1176 5.38112 9.13584C5.44752 9.23392 5.54175 9.31486 5.65852 9.36537C5.98502 9.50658 6.36417 9.35637 6.50538 9.02987L9.15656 2.89995C9.29777 2.57345 9.14756 2.1943 8.82107 2.05309Z" fill="black"/>
                             </svg>
-
                         </div>
-                        <div class="choose-item">
+                        <div id="telegram-item" class="choose-item chosen" onclick="Chosen('chosen-telegram', 'telegram-item')">
                             <svg class="choose-social-icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19 38C29.4934 38 38 29.4934 38 19C38 8.50659 29.4934 0 19 0C8.50659 0 0 8.50659 0 19C0 29.4934 8.50659 38 19 38Z" fill="url(#paint0_linear_0_1)"/>
 <path d="M27.9815 10.6405C28.1529 9.54736 27.0999 8.68453 26.1151 9.11128L6.50162 17.6108C5.79544 17.9168 5.8471 18.9727 6.57952 19.2029L10.6243 20.4742C11.3963 20.7169 12.2322 20.5914 12.9063 20.1317L22.0256 13.9133C22.3006 13.7257 22.6004 14.1117 22.3654 14.3507L15.8011 21.0305C15.1644 21.6786 15.2907 22.7766 16.0567 23.2507L23.4061 27.7996C24.2304 28.3097 25.2908 27.7973 25.445 26.814L27.9815 10.6405Z" fill="white"/>
@@ -145,13 +143,13 @@
 </linearGradient>
 </defs>
                             </svg>
-                            <svg class="chosen-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="chosen-telegram" class="chosen-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="6" cy="6" r="6" fill="#D9D9D9"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82107 2.05309C8.49457 1.91188 8.11541 2.06208 7.9742 2.38858L5.70142 7.64361L4.09955 6.04174C3.84801 5.79021 3.44019 5.79021 3.18865 6.04174C2.93712 6.29328 2.93712 6.7011 3.18865 6.95264L5.31128 9.07527C5.33342 9.09741 5.35677 9.1176 5.38112 9.13584C5.44752 9.23392 5.54175 9.31486 5.65852 9.36537C5.98502 9.50658 6.36417 9.35637 6.50538 9.02987L9.15656 2.89995C9.29777 2.57345 9.14756 2.1943 8.82107 2.05309Z" fill="black"/>
                             </svg>
                         </div>
-                        <div class="choose-item">
-                            <svg class="choose-social-icon" width="38" height="36" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div id="gmail-item" class="choose-item" onclick="Chosen('chosen-gmail', 'gmail-item')">
+                            <svg class="choose-social-icon" width="34" height="32" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.1504 2.3356L16.9685 9.50132L7.57669 2.3356V2.33753L7.58804 2.34723V12.3811L16.8627 19.7017L26.1504 12.6638V2.3356Z" fill="#EA4335"/>
 <path d="M28.5606 0.592566L26.1493 2.33556V12.6638L33.7368 6.83836V3.32906C33.7368 3.32906 32.8159 -1.68302 28.5606 0.592566Z" fill="#FBBC05"/>
 <path d="M26.1493 12.6638V26.0597H31.9647C31.9647 26.0597 33.6197 25.8893 33.7387 24.003V6.83835L26.1493 12.6638Z" fill="#34A853"/>
@@ -160,8 +158,7 @@
 <path d="M7.57669 2.33783V12.3718L7.58847 12.3814V2.34752L7.57669 2.33783Z" fill="#C5221F"/>
 <path d="M0 6.85031V24.0149C0.11726 25.9033 1.77397 26.0718 1.77397 26.0718H7.58948L7.57625 12.3718L0 6.85031Z" fill="#4285F4"/>
                             </svg>
-
-                            <svg class="chosen-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="chosen-gmail" class="chosen-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="6" cy="6" r="6" fill="#D9D9D9"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82107 2.05309C8.49457 1.91188 8.11541 2.06208 7.9742 2.38858L5.70142 7.64361L4.09955 6.04174C3.84801 5.79021 3.44019 5.79021 3.18865 6.04174C2.93712 6.29328 2.93712 6.7011 3.18865 6.95264L5.31128 9.07527C5.33342 9.09741 5.35677 9.1176 5.38112 9.13584C5.44752 9.23392 5.54175 9.31486 5.65852 9.36537C5.98502 9.50658 6.36417 9.35637 6.50538 9.02987L9.15656 2.89995C9.29777 2.57345 9.14756 2.1943 8.82107 2.05309Z" fill="black"/>
                             </svg>

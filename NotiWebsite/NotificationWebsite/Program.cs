@@ -23,7 +23,6 @@ builder.Services.AddScoped<HttpClient>();
 
 var jwtAuthenticationService = new JwtConfiguration();
 jwtAuthenticationService.ConfigureJwtAuthentication(builder.Services, builder.Configuration);
-//builder.Services.AddSingleton(builder.Configuration);
 
 var app = builder.Build();
 
