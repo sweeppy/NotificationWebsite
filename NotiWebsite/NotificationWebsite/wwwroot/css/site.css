@@ -133,8 +133,13 @@ body {
   color: #EEEEEE;
   text-align: center;
   position: relative;
-  padding-top: 20px;
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.main-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -197,7 +202,6 @@ body {
   color: #EEEEEE;
   text-align: center;
   position: relative;
-  padding-top: 20px;
   font-size: 30px;
 }
 .h-login{
@@ -242,8 +246,8 @@ body {
 .input-field{
   background-color: #222831;
   border-radius: 18px;
-  height: 4rem;
-  width: 25rem;
+  height: 2.8rem;
+  width: 20rem;
   border: none;
   margin-bottom: 20px;
   padding: 5px;
