@@ -308,7 +308,7 @@
     margin-top: 1%;
     margin-bottom: 3%;
     padding: 3%;
-    height: 55%;
+    height: 30%;
     font-size: 10px;
     border: none;
     outline: none;
@@ -319,7 +319,7 @@
     background: #EEEEEE;
 }
 .add-ta-message:focus{
-    height: 58%;
+    height: 32%;
 }
 .add-ta-message::-webkit-scrollbar{
     width: 4px;
@@ -331,6 +331,22 @@
     border-radius: 5px;
     background-color: #3f777a;
 }
+
+.choose-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+    margin: 10% 5% 0% 5%;
+}
+
+.select {
+    height: 100%;
+    width: 30%;
+    border-radius: 3px;
+    border: none;
+}
+
 
 .modal-right-content {
     display: flex;
@@ -350,8 +366,8 @@
     background: #EEEEEE;
     justify-self: center;
     align-self: center;
-    width: 96%;
-    height: 65%;
+    width: 90%;
+    height: 67%;
     border-radius: 10px;
     margin-top: 12%;
 }
@@ -361,6 +377,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 3% 5% 2%;
+    height: 15%;
 }
 
 header .current-date{
@@ -385,6 +402,8 @@ header .icons span:last-child{
 }
 
 .calendar{
+    padding-left: 3%;
+    padding-right: 3%;
     padding-bottom: 10%;
 }
 
@@ -408,7 +427,7 @@ header .icons span:last-child{
 }
 
 .calendar .days li{
-    margin-top: 1%;
+    margin-top: 0.5%;
     cursor: pointer;
     z-index: 1;
 }
@@ -448,8 +467,12 @@ header .icons span:last-child{
 .choose-socials{
     display: flex;
     align-items: center;
-    height: 10%;
-    margin: 3%;
+    justify-self: center;
+    align-self: center;
+    height: 9%;
+    width: 90%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     background-color: #EEEEEE;
     border-radius: 10px;
 }
@@ -488,7 +511,7 @@ header .icons span:last-child{
     cursor: pointer;
     display: flex;
     width: 90%;
-    height: 15%;
+    height: 10%;
     margin-left: auto;
     margin-right: 5%;
     margin-bottom: 2%;
@@ -509,6 +532,7 @@ header .icons span:last-child{
     color: #31363F;
     position: absolute;
     right: 2%; 
+    top: 1%;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
