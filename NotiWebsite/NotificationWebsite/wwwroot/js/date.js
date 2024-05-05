@@ -2,6 +2,10 @@ const currentDate = document.querySelector('.current-date'),
 daysTag = document.querySelector('.days'),
 prevNextIcon = document.querySelectorAll('.icons span');
 
+const hours = document.getElementById("hours"),
+  minutes = document.getElementById("minutes"),
+  dayPart = document.getElementById("day-part");
+
 let date = new Date(),
 currYear = date.getFullYear(),
 currMonth = date.getMonth(),
@@ -102,7 +106,8 @@ function PrepareToSelectDay(selectedDays) {
     }
     renderCalendar();
     selectedDays.forEach(day => {
-        if (day.textContent === selectedDay.textContent && !day.classList.contains('inactive')) {
+        if (day.textContent === selectedDay.textContent &&
+           !day.classList.contains('inactive')) {
             day.classList.add("active");
             return;
         }
@@ -110,4 +115,18 @@ function PrepareToSelectDay(selectedDays) {
     
 }
 
+const createTime = () => {
+  let optionHours = ""
+  let optionMinutes = `<option value="${1}">00:00</option>`
+
+  for (let i = 0; i < 12; i++) {
+    optionHours  += `<option value="${i}">${i}</option>`;
+  };
+  for (let i = 15; i < 60; i += 15) {
+    optionMinutes += `<option value="${i/15+1}">00:${i}</option>`;
+  }
+  hours.innerHTML = optionHours;
+  minutes.innerHTML = optionMinutes;
+};
+createTime();
 
