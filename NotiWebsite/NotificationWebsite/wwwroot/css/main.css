@@ -93,7 +93,7 @@
 
 .add-icon{
     position: absolute;
-    bottom: 2%;
+    bottom: 3%;
     right: 5%; 
     z-index: 1;
     transition: transform 0.3s;
@@ -341,11 +341,13 @@
 }
 
 .select {
+    text-align: center;
     height: 100%;
     width: 30%;
     border-radius: 3px;
     border: none;
 }
+
 
 
 .modal-right-content {

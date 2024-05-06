@@ -69,8 +69,6 @@
                                 <div class="notification-header poppins-bold-italic">@header</div>
                                 <div class="notification-body ">@notification.Message</div>
                             </div>
-
-
                         </div>
                     }
 
@@ -104,17 +102,17 @@
                         <rect x="17.0002" y="12.5" width="3" height="12" rx="1.5" fill="#EEEEEE" /></svg>
                     </div>
                     <h8 class="mg-l-8 title-field poppins-bold">Title</h8>
-                        <input type="text" class="mg-l-8 add-input-title poppins-medium-italic">
+                        <input id="title" type="text" class="mg-l-8 add-input-title poppins-medium-italic">
                     <h8 class="mg-l-8 title-field poppins-bold">Message</h8>
+                        <textarea id="message" class="mg-l-8 add-ta-message poppins-medium-italic"></textarea>
 
-                    <textarea class="mg-l-8 add-ta-message poppins-medium-italic"></textarea>
                     <div class="choose-time">
-                        <select id="hours" class="select"></select>
-                    <select id="minutes" class="select"></select>
-                    <select id="day-part" class="select">
-                        <option value="AM">AM</option>
-                        <option value="PM">PM</option>
-                    </select>
+                        <select id="hours" class="select poppins-light"></select>
+                        <select id="minutes" class="select poppins-light"></select>
+                        <select id="day-part" class="select poppins-light">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
                     </div>
                     
                 </div>
@@ -194,7 +192,7 @@
                             </svg>
                         </div>
                      </div>
-                     <a asp-controller="Home" asp-action="Index" class="modal-add-submit poppins-light">Add</a>
+                     <a onclick="CreateNewNotification()" class="modal-add-submit poppins-light">Add</a>
                 </div>
             </div>
         </div>
