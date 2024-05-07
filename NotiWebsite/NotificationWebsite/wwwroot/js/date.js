@@ -134,7 +134,8 @@ CreateTime();
 function CreateNewNotification() {
   const postHeader = document.getElementById("title"),
     postMessage = document.getElementById("message"),
-    postSocial = "";
+    postSocial = document.querySelector(".chosen");
+  console.log(postSocial.getAttribute("name"));
 
   let postDate = new Date();
   console.log(postMessage.value);
@@ -152,6 +153,5 @@ function CreateNewNotification() {
   if (postDate > date) {
     console.log(true);
   } else {
-    console.log(false);
   }
 }

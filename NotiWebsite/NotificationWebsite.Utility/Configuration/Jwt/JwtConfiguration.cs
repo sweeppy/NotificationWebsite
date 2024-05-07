@@ -8,7 +8,8 @@ namespace NotificationWebsite.Utility.Configuration.Jwt
 {
     public class JwtConfiguration
     {
-        public void ConfigureJwtAuthentication(IServiceCollection services, IConfiguration configuration)
+        public void ConfigureJwtAuthentication(IServiceCollection services,
+         IConfiguration configuration)
         {
             services.AddAuthentication(options =>
             {

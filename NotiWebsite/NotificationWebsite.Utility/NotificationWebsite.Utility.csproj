@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NotificationWebsite.Models\NotificationWebsite.Models.csproj" />
+    <ProjectReference Include="..\NotificationWebsite.DataAccess\NotificationWebsite.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
