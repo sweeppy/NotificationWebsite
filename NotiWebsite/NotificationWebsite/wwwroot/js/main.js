@@ -2,12 +2,12 @@ const modalContainer = document.getElementById("modal-container");
 const modal = document.getElementById("modal");
 const addIcon = document.querySelector(".add-icon");
 const closeModal = document.querySelector(".close-modal-add-notification");
-const chosenIcon_vk = document.getElementById('chosen-vk');
-const chosenIcon_telegram = document.getElementById('chosen-telegram')
-const chosenIcon_gmail = document.getElementById('chosen-gmail')
-const vkItem = document.getElementById('vk-item');
-const gmailItem = document.getElementById('gmail-item');
-const telegramItem = document.getElementById('telegram-item')
+const chosenIcon_vk = document.getElementById("chosen-vk");
+const chosenIcon_telegram = document.getElementById("chosen-telegram");
+const chosenIcon_gmail = document.getElementById("chosen-gmail");
+const vkItem = document.getElementById("vk-item");
+const gmailItem = document.getElementById("gmail-item");
+const telegramItem = document.getElementById("telegram-item");
 
 document.addEventListener("DOMContentLoaded", function () {
   var notificationStatusElements = document.querySelectorAll(
@@ -39,7 +39,7 @@ function showNotificationInfo(status, socialNetwork, message, header, date) {
         <div class="notification-information-social poppins-light-italic">Social network: ${socialNetwork}</div>
         <div class="notification-information-date poppins-light-italic">Date: ${date}</div>
       </div>
-      <div class="notification-information-message poppins-extralight-italic">Social network: ${message}</div>
+      <div class="notification-information-message poppins-extralight-italic">${message}</div>
       <div class="notification-information-status poppins-extralight-italic">Status: ${status}</div>`;
   notificationInfo.style.display = "flex";
   notificationInfo.classList.add("flex-column");
@@ -81,17 +81,16 @@ closeModal.onclick = function () {
   }, 400);
 };
 
-function Chosen(iconId, itemId){
+function Chosen(iconId, itemId) {
   chosenIcon_gmail.style.visibility = "hidden";
   chosenIcon_telegram.style.visibility = "hidden";
   chosenIcon_vk.style.visibility = "hidden";
   chosenIcon = document.getElementById(iconId);
   chosenIcon.style.visibility = "visible";
 
-  telegramItem.classList.remove('chosen');
-  vkItem.classList.remove('chosen');
-  gmailItem.classList.remove('chosen');
+  telegramItem.classList.remove("chosen");
+  vkItem.classList.remove("chosen");
+  gmailItem.classList.remove("chosen");
   chosenItem = document.getElementById(itemId);
-  chosenItem.classList.add('chosen');
+  chosenItem.classList.add("chosen");
 }
-

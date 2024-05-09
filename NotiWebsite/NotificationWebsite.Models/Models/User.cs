@@ -19,5 +19,6 @@ namespace NotificationWebsite.Models
         public string Password { get; set; } = string.Empty;
 
         public List<Notification>? Notifications { get; set; }
+
     }
 }

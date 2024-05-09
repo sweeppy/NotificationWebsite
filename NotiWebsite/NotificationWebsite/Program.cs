@@ -3,6 +3,7 @@ using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Utility.Configuration.Jwt;
 using NotificationWebsite.Utility.Helpers.Validation;
 using NotificationWebsite.Utility.Helpers.Jwt;
+using NotificationWebsite.Utility.Helpers.NotificationActions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,11 @@ builder.Services.AddScoped<HttpClient>();
 
 var jwtAuthenticationService = new JwtConfiguration();
 jwtAuthenticationService.ConfigureJwtAuthentication(builder.Services, builder.Configuration);
+
+builder.Services.AddScoped<INotificationActions, NotificationActions>();
+
+builder.Services.AddHttpContextAccessor();
+
 
 var app = builder.Build();
 
@@ -49,6 +55,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Main}/{action=Home}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

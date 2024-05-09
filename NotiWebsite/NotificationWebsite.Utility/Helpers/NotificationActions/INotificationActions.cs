@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NotificationWebsite.DataAccess.Contracts;
 
 namespace NotificationWebsite.Utility.Helpers.NotificationActions
 {
     public interface INotificationActions
     {
-        public Task<IActionResult> CreateNotification(
-            [FromBody] DateTime dateTimeParam, string header,
-             string message, string social, HttpContext context);
+        public Task<ActionResult<string>> CreateNotification(
+            [FromBody]CreateNotificationRequest request, HttpContext context);
     }
 }

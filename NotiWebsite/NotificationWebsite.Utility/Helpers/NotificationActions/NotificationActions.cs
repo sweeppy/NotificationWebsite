@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NotificationWebsite.DataAccess.Contracts;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
 using NotificationWebsite.Utility.Helpers.Jwt;
@@ -18,24 +19,28 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
             _db = db;
         }
 
-        public async Task<IActionResult> CreateNotification([FromBody] DateTime dateTimeParam,
-         string header, string message, string social, HttpContext context)
+        public async Task<ActionResult<string>> CreateNotification([FromBody]CreateNotificationRequest request, HttpContext context)
              {
                 string token = context.Request.Cookies["L_Cookie"];
 
                 User authenticatedUser = await _jwtService.GetUserByToken(token);
 
-                authenticatedUser.Notifications.Add(new Notification {
-                    Header = header,
-                    Message = message,
-                    Status = "Planned",
-                    SocialNetwork = social,
-                    User = authenticatedUser,
-                    Date = dateTimeParam
-                });
-                await _db.SaveChangesAsync();
+                if (authenticatedUser != null)
+                {
+                        authenticatedUser.Notifications.Add(new Notification {
+                        Header = request.header,
+                        Message = request.message,
+                        Status = "Planned",
+                        SocialNetwork = request.social,
+                        User = authenticatedUser,
+                        Date = request.dateTimeParam
+                    });
+                    await _db.SaveChangesAsync();
 
-                return new ObjectResult("ok");
+                    return ("success");
+                }
+                return ("error");
+                
              }
     }
 }

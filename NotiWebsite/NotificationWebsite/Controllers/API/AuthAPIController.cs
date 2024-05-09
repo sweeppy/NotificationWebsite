@@ -67,7 +67,8 @@ namespace NotificationWebsite.Controllers.API
                 {
                     Username = dto.Username,
                     Email = dto.Email,
-                    Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)//Password hash
+                    Password = BCrypt.Net.BCrypt.HashPassword(dto.Password),//Password hash
+                    Notifications = new List<Notification>()
                 };
                 _repository.Create(user);
                 var token = _jwtService.Generate(user.Id);

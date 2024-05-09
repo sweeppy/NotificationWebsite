@@ -63,7 +63,7 @@ namespace NotificationWebsite.Utility.Helpers.Jwt
 
             var userIdClaim = principal?.FindFirst("UserId");
 
-            if (userIdClaim == null && int.TryParse(userIdClaim.Value, out int userId))
+            if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId))
             {
                 User authenticatedUser = await _repository.GetById(userId);
                 return authenticatedUser;

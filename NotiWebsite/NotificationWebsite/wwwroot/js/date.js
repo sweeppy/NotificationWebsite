@@ -131,27 +131,49 @@ const CreateTime = () => {
 };
 CreateTime();
 
-function CreateNewNotification() {
-  const postHeader = document.getElementById("title"),
-    postMessage = document.getElementById("message"),
-    postSocial = document.querySelector(".chosen");
-  console.log(postSocial.getAttribute("name"));
-
-  let postDate = new Date();
-  console.log(postMessage.value);
-  console.log(postHeader.value);
+async function CreateNewNotification() {
+  const postHeader = document.getElementById("title").value,
+    postMessage = document.getElementById("message").value,
+    postSocial = document.querySelector(".chosen").getAttribute("name");
 
   let hours24 = 0;
-  dayPart.value == "PM"
+  dayPart.value === "PM"
     ? (hours24 = parseInt(hours.value) + 12)
     : (hours24 = hours.value);
 
-  postDate.setFullYear(postYear, postMonth, postDayOfTheMonth);
-  postDate.setHours(hours24);
-  postDate.setMinutes(parseInt(minutes.value));
+  const postDate = new Date(
+    Date.UTC(
+      postYear,
+      postMonth,
+      postDayOfTheMonth,
+      hours24,
+      parseInt(minutes.value)
+    )
+  );
 
   if (postDate > date) {
-    console.log(true);
-  } else {
+    const requestData = {
+      dateTimeParam: postDate.toISOString(),
+      header: postHeader,
+      message: postMessage,
+      social: postSocial,
+    };
+
+    try {
+      const response = await fetch(
+        "http://localhost:5019/api/NotificationAPI/create",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Cookie: document.cookie,
+          },
+          body: JSON.stringify(requestData),
+        }
+      );
+      location.reload();
+    } catch (error) {
+      console.error("Fetch error:", error);
+    }
   }
 }

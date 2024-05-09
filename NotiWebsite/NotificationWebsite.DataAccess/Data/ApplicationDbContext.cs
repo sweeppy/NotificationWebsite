@@ -17,11 +17,10 @@ namespace NotificationWebsite.DataAccess.Data
         {
             modelBuilder.Entity<User>(entity => { entity.HasIndex(e => e.Email).IsUnique(); });
 
-            modelBuilder.Entity<Notification>()
-            .HasOne(n => n.User)
-            .WithMany(u => u.Notifications)
-            .HasForeignKey(n => n.UserId)
-            .IsRequired();
+            modelBuilder.Entity<User>()
+            .HasMany(u => u.Notifications)
+            .WithOne(n => n.User)
+            .HasForeignKey(n => n.UserId);
         }
 
     }
