@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
+using NotificationWebsite.Utility.Helpers.Jwt;
 
 namespace NotificationWebsite.Controllers
 {
@@ -8,17 +9,21 @@ namespace NotificationWebsite.Controllers
     {
         private readonly ILogger<MainController> _logger;
         private readonly IUserRepository _user_rep;
-        public MainController(ILogger<MainController> logger, IUserRepository userRepository)
+
+        private readonly IJwtService _jwtService;
+        public MainController(ILogger<MainController> logger,
+         IUserRepository userRepository, IJwtService jwtService)
         {
             _logger = logger;
             _user_rep = userRepository;
+            _jwtService = jwtService;
         }
 
-        public async Task<IActionResult> Home()
+        public async Task<IActionResult> Home([FromServices] IHttpContextAccessor accessor)
         {
-            /*for test*/
-            User user = await _user_rep.GetById(1001);
-            return View(user);
+            string token = accessor.HttpContext.Request.Cookies["L_Cookie"];
+            User currentUser = await _jwtService.GetUserByToken(token);
+            return View(currentUser);
         }
 
     }
