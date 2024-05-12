@@ -1,4 +1,4 @@
-# NotificationWebSite
+# NotificationWebsite
 ## Website to help you remember the necessary things.
 **05.12.24.**
 
