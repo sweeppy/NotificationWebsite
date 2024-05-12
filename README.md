@@ -5,7 +5,7 @@
 _Already done:_
 * Jwt token authentication.
 * Users and Notificatations db access.
-* Logic for adding notifications.
+* Logic for creating new notifications.
 
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/homePage.png)
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/main.png)
