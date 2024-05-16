@@ -35,26 +35,14 @@ namespace NotificationWebsite.Controllers.API
                 HttpClientInitializer = credential,
                 ApplicationName = "ApplicationName",
             });
-
-                    var userInfoRequest = service.Users.GetProfile("me");
-                    try
-                    {
-                        var userInfo = userInfoRequest.Execute();
-                        var userEmail = userInfo.EmailAddress;
-                    }
-                    catch (Exception ex)
-                    {
-                        var msg = ex.Message;
-                        return BadRequest("Get email error");
-                    }
-
-
-            var message = new MimeMessage();
-                message.From.Add(new MailboxAddress("Test Name", "@gmail.com"));
-                message.To.Add(new MailboxAddress("", "lovethemoon808@gmail.com"));
-                message.Subject = "Test Email Using Gmail API";
-
-                message.Body = new TextPart("plain")
+                try
+                {
+                    string userEmail = service.Users.GetProfile("me").Execute().EmailAddress;
+                    var message = new MimeMessage();
+                    message.From.Add(new MailboxAddress("", userEmail));
+                    message.To.Add(new MailboxAddress("", userEmail));
+                    message.Subject = "Test Email Using Gmail API";
+                    message.Body = new TextPart("plain")
                 {
                     Text = "This is a test email sent using the Gmail API."
                 };
@@ -69,9 +57,14 @@ namespace NotificationWebsite.Controllers.API
                     };
                     service.Users.Messages.Send(newMsg, "me").Execute();
                 }
-            
+                }
+                catch (Exception ex)
+                {
+                    var msg = ex.Message;
+                    return BadRequest($"{msg}");
+                }
 
-            return Ok();
+            return Ok("Email was sent successfuly");
         }
     }   
     
