@@ -2,13 +2,12 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Options;
-using NotificationWebsite.Utility.Configuration.Jwt;
 using System.Security.Claims;
 using NotificationWebsite.Models;
-
 using NotificationWebsite.DataAccess.Data;
+using NotificationWebsite.Utility.Jwt.JwtConfiguration;
 
-namespace NotificationWebsite.Utility.Helpers.Jwt
+namespace NotificationWebsite.Utility.Jwt
 {
     
     public class JwtService : IJwtService
@@ -59,6 +58,11 @@ namespace NotificationWebsite.Utility.Helpers.Jwt
 
         public async Task<User> GetUserByToken(string token)
         {
+            if (token is null)
+            {
+                return null;
+            }
+
             var principal = GetClaimsPrincipalFromToken(token);
 
             var userIdClaim = principal?.FindFirst("UserId");

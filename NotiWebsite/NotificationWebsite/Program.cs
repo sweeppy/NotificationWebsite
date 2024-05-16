@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.DataAccess.Data;
-using NotificationWebsite.Utility.Configuration.Jwt;
 using NotificationWebsite.Utility.Helpers.Validation;
-using NotificationWebsite.Utility.Helpers.Jwt;
 using NotificationWebsite.Utility.Helpers.NotificationActions;
+using NotificationWebsite.Utility.Oauth.Configuration;
+using NotificationWebsite.Utility.Jwt;
+using NotificationWebsite.Utility.Jwt.JwtConfiguration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +24,9 @@ builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfi
 builder.Services.AddScoped<HttpClient>();
 
 var jwtAuthenticationService = new JwtConfiguration();
+var Oauth2Service = new Oauth2Configuration();
 jwtAuthenticationService.ConfigureJwtAuthentication(builder.Services, builder.Configuration);
+Oauth2Service.ConfigureOauth2(builder.Services, builder.Configuration);
 
 builder.Services.AddScoped<INotificationActions, NotificationActions>();
 

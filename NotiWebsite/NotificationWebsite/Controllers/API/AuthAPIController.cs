@@ -4,8 +4,8 @@ using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
 using NotificationWebsite.Models.Dtos;
 using NotificationWebsite.Models.Models.Dtos;
-using NotificationWebsite.Utility.Configuration.Jwt;
-using NotificationWebsite.Utility.Helpers.Jwt;
+using NotificationWebsite.Utility.Jwt;
+using NotificationWebsite.Utility.Jwt.JwtConfiguration;
 
 namespace NotificationWebsite.Controllers.API
 {

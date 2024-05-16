@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace NotificationWebsite.Utility.Configuration.Jwt
+namespace NotificationWebsite.Utility.Jwt.JwtConfiguration
 {
     public class JwtConfiguration
     {

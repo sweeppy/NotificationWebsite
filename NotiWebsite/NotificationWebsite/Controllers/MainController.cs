@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using NotificationWebsite.Models;
-using NotificationWebsite.Utility.Helpers.Jwt;
+using NotificationWebsite.Utility.Jwt;
 
 namespace NotificationWebsite.Controllers
 {
@@ -19,6 +19,11 @@ namespace NotificationWebsite.Controllers
         {
             string token = accessor.HttpContext.Request.Cookies["L_Cookie"];
             User currentUser = await _jwtService.GetUserByToken(token);
+            if (currentUser is null)
+            {
+                TempData["ErrorMessage"] = "You need to login.";
+                return RedirectToAction("Index", "Home");
+            }
             return View(currentUser);
         }
 

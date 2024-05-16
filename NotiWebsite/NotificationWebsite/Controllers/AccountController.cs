@@ -86,20 +86,29 @@ namespace NotificationWebsite.Controllers
             var response = await _httpClient.PostAsync(url, content);
 
             var data = await response.Content.ReadAsStringAsync();
-            var loginResponse = JsonConvert.DeserializeObject<LoginRequestResponse>(data);
-
-            if (response.IsSuccessStatusCode)
+            try
             {
-                TempData["SuccessMessage"] = loginResponse.Message;
+                var loginResponse = JsonConvert.DeserializeObject<LoginRequestResponse>(data);
+                if (response.IsSuccessStatusCode)
+                {
+                    TempData["SuccessMessage"] = loginResponse.Message;
 
-                HttpContext.Response.Cookies
-                    .Append("L_Cookie", loginResponse.Token, new CookieOptions { HttpOnly = true });//add token to cookies
+                    HttpContext.Response.Cookies
+                        .Append("L_Cookie", loginResponse.Token, new CookieOptions { HttpOnly = true });//add token to cookies
 
-                return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = $"{loginResponse.Message}";
+
+                    return View("Login");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                TempData["ErrorMessage"] = $"{loginResponse.Message}";
+                _logger.LogInformation(ex, ex.Message);
+                TempData["ErrorMessage"] = "Something went worng.";
 
                 return View("Login");
             }

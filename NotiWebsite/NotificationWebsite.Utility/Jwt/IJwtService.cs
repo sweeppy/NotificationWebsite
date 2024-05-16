@@ -1,7 +1,7 @@
 using System.Security.Claims;
 using NotificationWebsite.Models;
 
-namespace NotificationWebsite.Utility.Helpers.Jwt
+namespace NotificationWebsite.Utility.Jwt
 {
     public interface IJwtService
     {

@@ -1,6 +1,6 @@
 
 
-namespace NotificationWebsite.Utility.Configuration.Jwt
+namespace NotificationWebsite.Utility.Jwt.JwtConfiguration
 {
     public class JwtConfig
     {

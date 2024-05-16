@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using NotificationWebsite.DataAccess.Contracts;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
-using NotificationWebsite.Utility.Helpers.Jwt;
+using NotificationWebsite.Utility.Jwt;
 
 namespace NotificationWebsite.Utility.Helpers.NotificationActions
 {
