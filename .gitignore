@@ -264,3 +264,4 @@ obj
 packages
 .DS_Store
 **/appsettings.json
+**/client_secret.json
