@@ -11,4 +11,11 @@ namespace NotificationWebsite.Utility
                 .Replace("=", "");
         }
     }
+
+    public static class NotificationStatuses
+{
+    public const string Planned = "Planned";
+    public const string Canceled = "Canceled";
+    public const string Sent = "Sent";
+}
 }

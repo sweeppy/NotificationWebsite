@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.DataAccess.Contracts;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
@@ -45,6 +46,17 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
                     UserId = authenticatedUser.Id
                 };
             return notification;
+        }
+
+        public async Task UpdateNotificationStatusAsync(Notification notification, User authenticatedUser)
+        {
+            if(authenticatedUser != null && notification != null)
+            {
+                User user = await _db.Users.FirstOrDefaultAsync(us => us.Id == authenticatedUser.Id);
+                user.Notifications.FirstOrDefault(n => n.Id == notification.Id).Status = NotificationStatuses.Sent;
+                var t = "t";
+                await _db.SaveChangesAsync();
+            }
         }
     }
 }

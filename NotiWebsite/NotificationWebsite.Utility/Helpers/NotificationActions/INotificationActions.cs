@@ -10,5 +10,7 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
         public Task<IActionResult> AddNotificationToDBAsync(Notification notification, User authenticatedUser);
 
         public Notification MakeNotificationFromRequest(CreateNotificationRequest request, User authUser);
+
+        public Task UpdateNotificationStatusAsync(Notification notification, User authenticatedUser);
     }
 }
