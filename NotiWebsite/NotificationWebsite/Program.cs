@@ -5,6 +5,7 @@ using NotificationWebsite.Utility.Helpers.NotificationActions;
 using NotificationWebsite.Utility.Oauth.Configuration;
 using NotificationWebsite.Utility.Jwt;
 using NotificationWebsite.Utility.Jwt.JwtConfiguration;
+using NotificationWebsite.Utility.Oauth.OauthHelpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILoginValidation, CheckValidation>();
 
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<ISecrets, Secrets>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));//get jwt sections from appsettings
 
 builder.Services.AddScoped<HttpClient>();

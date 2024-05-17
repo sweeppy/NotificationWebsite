@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using NotificationWebsite.DataAccess.Contracts;
 using NotificationWebsite.DataAccess.Data;
@@ -19,28 +20,31 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
             _db = db;
         }
 
-        public async Task<ActionResult<string>> CreateNotification([FromBody]CreateNotificationRequest request, HttpContext context)
-             {
-                string token = context.Request.Cookies["L_Cookie"];
+        public async Task<IActionResult> AddNotificationToDBAsync(Notification notification, User authenticatedUser)
+        {
+            if (authenticatedUser == null || notification == null)
+            {
+                return new BadRequestObjectResult("Null reference");
+            }
 
-                User authenticatedUser = await _jwtService.GetUserByToken(token);
+            authenticatedUser.Notifications.Add(notification);
+            await _db.SaveChangesAsync();
 
-                if (authenticatedUser != null)
+            return new OkObjectResult("Notification was created");
+        }
+
+        public Notification MakeNotificationFromRequest(CreateNotificationRequest request, User authenticatedUser)
+        {
+            Notification notification = new Notification
                 {
-                        authenticatedUser.Notifications.Add(new Notification {
-                        Header = request.header,
-                        Message = request.message,
-                        Status = "Planned",
-                        SocialNetwork = request.social,
-                        User = authenticatedUser,
-                        Date = request.dateTimeParam
-                    });
-                    await _db.SaveChangesAsync();
-
-                    return ("success");
-                }
-                return ("error");
-                
-             }
+                    Header = request.header,
+                    Message = request.message,
+                    SocialNetwork = request.social,
+                    Date = request.dateTimeParam,
+                    Status = "planned",
+                    UserId = authenticatedUser.Id
+                };
+            return notification;
+        }
     }
 }

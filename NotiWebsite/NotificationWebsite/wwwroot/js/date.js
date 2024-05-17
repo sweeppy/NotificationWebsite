@@ -132,6 +132,7 @@ const CreateTime = () => {
 CreateTime();
 
 async function CreateNewNotification() {
+  console.log("jasdf");
   const postHeader = document.getElementById("title").value,
     postMessage = document.getElementById("message").value,
     postSocial = document.querySelector(".chosen").getAttribute("name");
@@ -158,10 +159,9 @@ async function CreateNewNotification() {
       message: postMessage,
       social: postSocial,
     };
-
     try {
       const response = await fetch(
-        "http://localhost:5019/api/NotificationAPI/create",
+        "http://localhost:5019/api/gmail/sendMessage",
         {
           method: "POST",
           headers: {
@@ -171,9 +171,10 @@ async function CreateNewNotification() {
           body: JSON.stringify(requestData),
         }
       );
-      location.reload();
     } catch (error) {
       console.error("Fetch error:", error);
     }
   }
+  document.location.reload();
+  console.log("End CreateNewNotification function");
 }

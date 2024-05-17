@@ -56,7 +56,7 @@ namespace NotificationWebsite.Utility.Jwt
             return principal;
         }
 
-        public async Task<User> GetUserByToken(string token)
+        public async Task<User> GetUserByTokenAsync(string token)
         {
             if (token is null)
             {

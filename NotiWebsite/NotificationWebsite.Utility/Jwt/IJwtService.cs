@@ -7,7 +7,7 @@ namespace NotificationWebsite.Utility.Jwt
     {
         public string Generate(int id);
 
-        public Task<User> GetUserByToken(string token);
+        public Task<User> GetUserByTokenAsync(string token);
 
         public ClaimsPrincipal GetClaimsPrincipalFromToken(string token);
     }

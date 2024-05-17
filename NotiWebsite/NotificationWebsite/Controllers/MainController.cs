@@ -18,7 +18,7 @@ namespace NotificationWebsite.Controllers
         public async Task<IActionResult> Home([FromServices] IHttpContextAccessor accessor)
         {
             string token = accessor.HttpContext.Request.Cookies["L_Cookie"];
-            User currentUser = await _jwtService.GetUserByToken(token);
+            User currentUser = await _jwtService.GetUserByTokenAsync(token);
             if (currentUser is null)
             {
                 TempData["ErrorMessage"] = "You need to login.";

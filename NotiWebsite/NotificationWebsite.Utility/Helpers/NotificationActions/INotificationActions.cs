@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NotificationWebsite.DataAccess.Contracts;
+using NotificationWebsite.Models;
 
 namespace NotificationWebsite.Utility.Helpers.NotificationActions
 {
     public interface INotificationActions
     {
-        public Task<ActionResult<string>> CreateNotification(
-            [FromBody]CreateNotificationRequest request, HttpContext context);
+        public Task<IActionResult> AddNotificationToDBAsync(Notification notification, User authenticatedUser);
+
+        public Notification MakeNotificationFromRequest(CreateNotificationRequest request, User authUser);
     }
 }
