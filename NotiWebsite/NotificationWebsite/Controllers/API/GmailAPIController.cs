@@ -86,7 +86,7 @@ namespace NotificationWebsite.Controllers.API
 
                         timer = new System.Threading.Timer(async (state) =>
                         {
-                            service.Users.Messages.Send(newMsg, "me").Execute();//send message by the end of delay
+                            await service.Users.Messages.Send(newMsg, "me").ExecuteAsync();//send message by the end of delay
                             await _notiActions.UpdateNotificationStatusAsync(notification, authenticatedUser);//changing notification status 
                             timer.Dispose();
                         }, null, delay, TimeSpan.Zero);
