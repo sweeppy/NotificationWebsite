@@ -1,7 +1,7 @@
-using Google.Apis.Auth.OAuth2;
 using Google.Apis.Gmail.v1;
 using Google.Apis.Gmail.v1.Data;
 using Google.Apis.Services;
+using Hangfire;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using NotificationWebsite.DataAccess.Contracts;
@@ -9,7 +9,6 @@ using NotificationWebsite.Models;
 using NotificationWebsite.Utility;
 using NotificationWebsite.Utility.Helpers.NotificationActions;
 using NotificationWebsite.Utility.Jwt;
-using NotificationWebsite.Utility.Oauth.Load;
 using NotificationWebsite.Utility.Oauth.OauthHelpers;
 
 namespace NotificationWebsite.Controllers.API
@@ -21,15 +20,13 @@ namespace NotificationWebsite.Controllers.API
 
         private readonly INotificationActions _notiActions;
         private readonly IJwtService _jwtService;
-        private readonly ISecrets _secrets;
-        private readonly IConfiguration _configuration;
+        private readonly IClientService _service;
 
-        public GmailAPIController(INotificationActions notiActions, IJwtService jwtService, ISecrets secrets, IConfiguration configuration)
+        public GmailAPIController(INotificationActions notiActions, IJwtService jwtService, IClientService clientService)
         {
             _notiActions = notiActions;
             _jwtService = jwtService;
-            _secrets = secrets;
-            _configuration = configuration;
+            _service = clientService;
         }
 
         [HttpPost("sendMessage")]
@@ -44,24 +41,9 @@ namespace NotificationWebsite.Controllers.API
             User authenticatedUser = await _jwtService.GetUserByTokenAsync(context.Request.Cookies["L_Cookie"]);//get user from jwt token
             Notification notification = _notiActions.MakeNotificationFromRequest(request, authenticatedUser);
             
-
-            OAuthClientInfo clientInfo =  OAuthClientInfo.Load(_configuration);//get client id and secret from appsettings
-            ClientSecrets secrets = _secrets.GetSecrets(clientInfo);
-
-            string [] scopes = new string[] {Google.Apis.Gmail.v1.GmailService.Scope.GmailSend,//for send gmail
-                                            Google.Apis.Gmail.v1.GmailService.Scope.GmailCompose};//for get user email address
-
-            UserCredential credential = GoogleWebAuthorizationBroker.
-                AuthorizeAsync(secrets, scopes, "user", CancellationToken.None).Result;
-            
-            var service = new GmailService(new BaseClientService.Initializer()
-            {
-                HttpClientInitializer = credential,
-                ApplicationName = "SendMessage",
-            });
                 try
                 {
-                    string userEmail = service.Users.GetProfile("me").Execute().EmailAddress;
+                    string userEmail = ((GmailService)_service).Users.GetProfile("me").Execute().EmailAddress;
 
                     var message = new MimeMessage();
                     message.From.Add(new MailboxAddress("", userEmail));
@@ -81,31 +63,28 @@ namespace NotificationWebsite.Controllers.API
                         {
                             Raw = SD.Base64UrlEncode(stream.ToArray())
                         };
-                        System.Threading.Timer timer = null;
-                        var delay = notification.Date - DateTime.Now;//culculating delay for disposing thread
+                    
+                        await _notiActions.AddNotificationToDBAsync(notification, authenticatedUser);
 
-                        timer = new System.Threading.Timer(async (state) =>
+                        var delay = notification.Date - DateTime.Now;
+
+                        Task.Run(async () =>
                         {
-                            await service.Users.Messages.Send(newMsg, "me").ExecuteAsync();//send message by the end of delay
-                            await _notiActions.UpdateNotificationStatusAsync(notification, authenticatedUser);//changing notification status 
-                            timer.Dispose();
-                        }, null, delay, TimeSpan.Zero);
-                    }
+                            await Task.Delay(TimeSpan.FromSeconds(10));
 
+                            // Execute the code with the desired delay
+                            await ((GmailService)_service).Users.Messages.Send(newMsg, "me").ExecuteAsync(); // Send message by the end of delay
+                        });
+                        
+                        BackgroundJob.Schedule(() => 
+                        _notiActions.UpdateNotificationStatusAsync(notification, authenticatedUser), TimeSpan.FromSeconds(10)); // Change notification status
+                    }                         
                 }
                 catch (Exception ex)
                 {
                     var msg = ex.Message;
                     return BadRequest($"{msg}");
                 }
-            try
-            {
-                await _notiActions.AddNotificationToDBAsync(notification, authenticatedUser);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"An exeption while saving changes in DB{ex.Message}");
-            }
             return Ok("Email was sent successfuly");
         }
     }   
