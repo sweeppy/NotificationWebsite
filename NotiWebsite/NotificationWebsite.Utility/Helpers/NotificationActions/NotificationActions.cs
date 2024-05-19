@@ -1,11 +1,8 @@
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.DataAccess.Contracts;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
-using NotificationWebsite.Utility.Jwt;
 
 namespace NotificationWebsite.Utility.Helpers.NotificationActions
 {
@@ -13,11 +10,9 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
     {
 
         private readonly ApplicationDbContext _db;
-        private readonly IJwtService _jwtService;
 
-        public NotificationActions(IJwtService jwtService, ApplicationDbContext db)
+        public NotificationActions(ApplicationDbContext db)
         {
-            _jwtService = jwtService;
             _db = db;
         }
 
@@ -52,9 +47,8 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
         {
             if(authenticatedUser != null && notification != null)
             {
-                User user = await _db.Users.FirstOrDefaultAsync(us => us.Id == authenticatedUser.Id);
+                User user = await _db.Users.Include(u => u.Notifications).FirstOrDefaultAsync(u => u.Id == authenticatedUser.Id);
                 user.Notifications.FirstOrDefault(n => n.Id == notification.Id).Status = NotificationStatuses.Sent;
-                var t = "t";
                 await _db.SaveChangesAsync();
             }
         }

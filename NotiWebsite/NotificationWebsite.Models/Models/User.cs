@@ -18,7 +18,7 @@ namespace NotificationWebsite.Models
         [RegularExpression(@"^(?=.*\p{Lu})(?=.*\p{Nd}).{6,}$", ErrorMessage = "The password must contain capital letters and numbers")]
         public string Password { get; set; } = string.Empty;
 
-        public List<Notification>? Notifications { get; set; }
+        public List<Notification> Notifications { get; set; }
 
     }
 }
