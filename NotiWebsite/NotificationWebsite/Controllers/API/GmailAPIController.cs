@@ -67,10 +67,17 @@ namespace NotificationWebsite.Controllers.API
                         await _notiActions.AddNotificationToDBAsync(notification, authenticatedUser);
 
                         var delay = notification.Date - DateTime.Now;
+
+                        Task.Run(async () =>
+                        {
+                            await Task.Delay(TimeSpan.FromSeconds(10));
+
+                            // Execute the code with the desired delay
+                            await ((GmailService)_service).Users.Messages.Send(newMsg, "me").ExecuteAsync(); // Send message by the end of delay
+                        });
                         
-                        BackgroundJob.Schedule(() => ((GmailService)_service).Users.Messages.Send(newMsg, "me").ExecuteAsync(), TimeSpan.FromSeconds(10)); // Send message by the end of delay
                         BackgroundJob.Schedule(() => 
-                        _notiActions.UpdateNotificationStatusAsync(notification, authenticatedUser),TimeSpan.FromSeconds(10)); // Change notification status
+                        _notiActions.UpdateNotificationStatusAsync(notification, authenticatedUser), TimeSpan.FromSeconds(10)); // Change notification status
                     }                         
                 }
                 catch (Exception ex)
