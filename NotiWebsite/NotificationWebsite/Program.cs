@@ -55,7 +55,7 @@ var credentials = GoogleWebAuthorizationBroker.AuthorizeAsync(
         ClientSecret = OAuthClientInfo.Load(builder.Configuration).ClientSecret
     },
     new[] { GmailService.Scope.GmailSend, GmailService.Scope.GmailCompose },
-    "user",
+    "me",
     CancellationToken.None,
     new FileDataStore("Gmail.Credentials")
 ).Result;
@@ -63,14 +63,16 @@ var credentials = GoogleWebAuthorizationBroker.AuthorizeAsync(
 var initializer = new BaseClientService.Initializer
 {
     HttpClientInitializer = credentials,
-    ApplicationName = "NotificationWebsite"
+    ApplicationName = "SendNotification"
 };
 
 var gmailService = new GmailService(initializer);
 
 builder.Services.AddSingleton(credentials);
 builder.Services.AddSingleton(gmailService);
-builder.Services.AddSingleton<IClientService>(gmailService);
+
+
+
 
 builder.Services.AddScoped<INotificationActions, NotificationActions>();
 

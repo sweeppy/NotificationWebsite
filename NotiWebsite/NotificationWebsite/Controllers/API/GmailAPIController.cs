@@ -9,7 +9,6 @@ using NotificationWebsite.Models;
 using NotificationWebsite.Utility;
 using NotificationWebsite.Utility.Helpers.NotificationActions;
 using NotificationWebsite.Utility.Jwt;
-using NotificationWebsite.Utility.Oauth.OauthHelpers;
 
 namespace NotificationWebsite.Controllers.API
 {
@@ -20,9 +19,10 @@ namespace NotificationWebsite.Controllers.API
 
         private readonly INotificationActions _notiActions;
         private readonly IJwtService _jwtService;
-        private readonly IClientService _service;
+        private readonly GmailService _service;
 
-        public GmailAPIController(INotificationActions notiActions, IJwtService jwtService, IClientService clientService)
+        public GmailAPIController(INotificationActions notiActions,
+         IJwtService jwtService, GmailService clientService)
         {
             _notiActions = notiActions;
             _jwtService = jwtService;
@@ -38,12 +38,21 @@ namespace NotificationWebsite.Controllers.API
                 return BadRequest("Notification is null");
             }
             var context = accessor.HttpContext;
-            User authenticatedUser = await _jwtService.GetUserByTokenAsync(context.Request.Cookies["L_Cookie"]);//get user from jwt token
-            Notification notification = _notiActions.MakeNotificationFromRequest(request, authenticatedUser);
-            
-                try
+            //get user from jwt token
+            User authenticatedUser = await _jwtService.
+            GetUserByTokenAsync(context.Request.Cookies["L_Cookie"]);
+            //make notification model from requset body
+            Notification notification = _notiActions.
+            MakeNotificationFromRequest(request, authenticatedUser);
+
+            if (authenticatedUser == null || notification == null)
+            {
+                return BadRequest("User information not found");
+            }
+
+            try
                 {
-                    string userEmail = ((GmailService)_service).Users.GetProfile("me").Execute().EmailAddress;
+                    string userEmail = _service.Users.GetProfile("me").Execute().EmailAddress;
 
                     var message = new MimeMessage();
                     message.From.Add(new MailboxAddress("", userEmail));
@@ -68,15 +77,12 @@ namespace NotificationWebsite.Controllers.API
 
                         var delay = notification.Date - DateTime.Now;
 
-                        Task.Run(async () =>
-                        {
-                            await Task.Delay(delay);
+                        // Send message on his email
 
-                            await ((GmailService)_service).Users.Messages.Send(newMsg, "me").ExecuteAsync(); // Send message by the end of delay
-                        });
-                        
+                        // Change notification status
                         BackgroundJob.Schedule(() => 
-                        _notiActions.UpdateNotificationStatusAsync(notification, authenticatedUser), delay); // Change notification status
+                        _notiActions.SendLetterAndUpdateNotificationStatusAsync(
+                            notification, authenticatedUser, newMsg),delay);
                     }                         
                 }
                 catch (Exception ex)
@@ -84,6 +90,7 @@ namespace NotificationWebsite.Controllers.API
                     var msg = ex.Message;
                     return BadRequest($"{msg}");
                 }
+                
             return Ok("Email was sent successfuly");
         }
     }   

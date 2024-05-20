@@ -30,9 +30,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NotificationWebsite.Utility\NotificationWebsite.Utility.csproj" />
     <ProjectReference Include="..\NotificationWebsite.Models\NotificationWebsite.Models.csproj" />
     <ProjectReference Include="..\NotificationWebsite.DataAccess\NotificationWebsite.DataAccess.csproj" />
+    <ProjectReference Include="..\NotificationWebsite.Utility\NotificationWebsite.Utility.csproj" />
   </ItemGroup>
 
 </Project>

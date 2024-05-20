@@ -1,3 +1,5 @@
+using Google.Apis.Gmail.v1;
+using Google.Apis.Gmail.v1.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NotificationWebsite.DataAccess.Contracts;
@@ -11,6 +13,6 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
 
         public Notification MakeNotificationFromRequest(CreateNotificationRequest request, User authUser);
 
-        public Task UpdateNotificationStatusAsync(Notification notification, User authenticatedUser);
+        public Task SendLetterAndUpdateNotificationStatusAsync(Notification notification, User authenticatedUser, Message message);
     }
 }

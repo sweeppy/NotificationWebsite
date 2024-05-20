@@ -12,7 +12,7 @@ using NotificationWebsite.DataAccess.Data;
 namespace NotificationWebsite.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240519104654_CreateHangfireDb")]
+    [Migration("20240520052820_CreateHangfireDb")]
     partial class CreateHangfireDb
     {
         /// <inheritdoc />

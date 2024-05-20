@@ -1,3 +1,5 @@
+using Google.Apis.Gmail.v1;
+using Google.Apis.Gmail.v1.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.DataAccess.Contracts;
@@ -11,9 +13,12 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
 
         private readonly ApplicationDbContext _db;
 
-        public NotificationActions(ApplicationDbContext db)
+        private readonly GmailService _gmailService;
+
+        public NotificationActions(ApplicationDbContext db, GmailService gmailService)
         {
             _db = db;
+            _gmailService = gmailService;
         }
 
         public async Task<IActionResult> AddNotificationToDBAsync(Notification notification, User authenticatedUser)
@@ -43,10 +48,12 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
             return notification;
         }
 
-        public async Task UpdateNotificationStatusAsync(Notification notification, User authenticatedUser)
+        public async Task SendLetterAndUpdateNotificationStatusAsync(Notification notification,
+         User authenticatedUser, Message message)
         {
-            if(authenticatedUser != null && notification != null)
+            if(authenticatedUser != null && notification != null && message != null)
             {
+                _gmailService.Users.Messages.Send(message, "me").ExecuteAsync();
                 User user = await _db.Users.Include(u => u.Notifications).FirstOrDefaultAsync(u => u.Id == authenticatedUser.Id);
                 user.Notifications.FirstOrDefault(n => n.Id == notification.Id).Status = NotificationStatuses.Sent;
                 await _db.SaveChangesAsync();
