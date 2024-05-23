@@ -4,7 +4,6 @@ using NotificationWebsite.Utility.Helpers.Validation;
 using NotificationWebsite.Utility.Helpers.NotificationActions;
 using NotificationWebsite.Utility.Jwt;
 using NotificationWebsite.Utility.Jwt.JwtConfiguration;
-using NotificationWebsite.Utility.Oauth.OauthHelpers;
 using Hangfire;
 using Newtonsoft.Json;
 using NotificationWebsite.Utility.Oauth.Configuration;
@@ -25,7 +24,6 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILoginValidation, CheckValidation>();
 
 builder.Services.AddScoped<IJwtService, JwtService>();
-builder.Services.AddScoped<ISecrets, Secrets>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));//get jwt sections from appsettings
 
 builder.Services.AddScoped<HttpClient>();
