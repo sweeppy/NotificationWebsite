@@ -1,6 +1,7 @@
-
-using Google.Apis.Auth.AspNetCore3;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Gmail.v1;
+using Google.Apis.Services;
+using Google.Apis.Util.Store;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NotificationWebsite.Utility.Oauth.Load;
@@ -13,23 +14,30 @@ namespace NotificationWebsite.Utility.Oauth.Configuration
         {
             OAuthClientInfo clientInfo =  OAuthClientInfo.Load(configuration);
 
-            services
-                .AddAuthentication(options =>
+            var credentials = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                new ClientSecrets
                 {
-                    options.DefaultChallengeScheme = GoogleOpenIdConnectDefaults.AuthenticationScheme;
+                    ClientId = clientInfo.ClientId,
+                    ClientSecret = clientInfo.ClientSecret,
+                },
+                new[] { GmailService.Scope.GmailSend, GmailService.Scope.GmailCompose },
+                "me",
+                CancellationToken.None,
+                new FileDataStore("Gmail.Credentials")
+            ).Result;
 
-                    options.DefaultForbidScheme = GoogleOpenIdConnectDefaults.AuthenticationScheme;
+            var initializer = new BaseClientService.Initializer
+            {
+                HttpClientInitializer = credentials,
+                ApplicationName = "SendNotification"
+            };
 
-                    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                })
-                .AddCookie(op =>
-                {
-                })
-                .AddGoogleOpenIdConnect(o =>
-                {
-                    o.ClientId = clientInfo.ClientId;
-                    o.ClientSecret = clientInfo.ClientSecret;
-                });
+            var gmailService = new GmailService(initializer);
+
+            services.AddSingleton(credentials);
+
+            services.AddSingleton(gmailService);
+
         }
     }
 }

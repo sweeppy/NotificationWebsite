@@ -2,17 +2,12 @@ using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Utility.Helpers.Validation;
 using NotificationWebsite.Utility.Helpers.NotificationActions;
-using NotificationWebsite.Utility.Oauth.Configuration;
 using NotificationWebsite.Utility.Jwt;
 using NotificationWebsite.Utility.Jwt.JwtConfiguration;
 using NotificationWebsite.Utility.Oauth.OauthHelpers;
 using Hangfire;
 using Newtonsoft.Json;
-using Google.Apis.Services;
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Util.Store;
-using Google.Apis.Gmail.v1;
-using NotificationWebsite.Utility.Oauth.Load;
+using NotificationWebsite.Utility.Oauth.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,35 +39,10 @@ GlobalConfiguration.Configuration.UseSerializerSettings
 );
 
 var jwtAuthenticationService = new JwtConfiguration();
-var Oauth2Service = new Oauth2Configuration();
 jwtAuthenticationService.ConfigureJwtAuthentication(builder.Services, builder.Configuration);
-Oauth2Service.ConfigureOauth2(builder.Services, builder.Configuration);
 
-var credentials = GoogleWebAuthorizationBroker.AuthorizeAsync(
-    new ClientSecrets
-    {
-        ClientId = OAuthClientInfo.Load(builder.Configuration).ClientId,
-        ClientSecret = OAuthClientInfo.Load(builder.Configuration).ClientSecret
-    },
-    new[] { GmailService.Scope.GmailSend, GmailService.Scope.GmailCompose },
-    "me",
-    CancellationToken.None,
-    new FileDataStore("Gmail.Credentials")
-).Result;
-
-var initializer = new BaseClientService.Initializer
-{
-    HttpClientInitializer = credentials,
-    ApplicationName = "SendNotification"
-};
-
-var gmailService = new GmailService(initializer);
-
-builder.Services.AddSingleton(credentials);
-builder.Services.AddSingleton(gmailService);
-
-
-
+var oauthConfigration = new Oauth2Configuration();
+oauthConfigration.ConfigureOauth2(builder.Services, builder.Configuration);
 
 builder.Services.AddScoped<INotificationActions, NotificationActions>();
 
