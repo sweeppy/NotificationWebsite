@@ -6,7 +6,8 @@ _Already done:_
 * Users and Notificatations db access.
 * Logic for creating new notifications(visual representation).
 * Oauth 2.0 authentication.
-* Send message to user from his email at a specific time(currently the application must work while the letter is being sent).
+* Send message to user from his email at a specific time(the application must work while the letter is being sent).
+* Hangfire configuration and implementation.
 
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/homePage.png)
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/main.png)
