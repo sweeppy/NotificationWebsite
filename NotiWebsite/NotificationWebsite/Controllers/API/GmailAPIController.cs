@@ -29,8 +29,8 @@ namespace NotificationWebsite.Controllers.API
             _service = clientService;
         }
 
-        [HttpPost("sendMessage")]
-        public async Task<IActionResult> SendMessage([FromBody]CreateNotificationRequest request,
+        [HttpPost("gmailSendMessage")]
+        public async Task<IActionResult> GmailSendMessage([FromBody]CreateNotificationRequest request,
         [FromServices] IHttpContextAccessor accessor)
         {   
             if (request == null)

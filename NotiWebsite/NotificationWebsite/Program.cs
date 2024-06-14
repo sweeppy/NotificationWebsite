@@ -28,7 +28,7 @@ builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfi
 
 builder.Services.AddScoped<HttpClient>();
 
-GlobalConfiguration.Configuration.UseSerializerSettings
+GlobalConfiguration.Configuration.UseSerializerSettings// to avoid reference recursion exception
 (
     new JsonSerializerSettings
     {

@@ -161,7 +161,7 @@ async function CreateNewNotification() {
     };
     try {
       const response = await fetch(
-        "http://localhost:5019/api/gmail/sendMessage",
+        "http://localhost:5019/api/gmail/gmailSendMessage",
         {
           method: "POST",
           headers: {
