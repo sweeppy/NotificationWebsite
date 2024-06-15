@@ -7,6 +7,7 @@ using NotificationWebsite.Utility.Jwt.JwtConfiguration;
 using Hangfire;
 using Newtonsoft.Json;
 using NotificationWebsite.Utility.Oauth.Configuration;
+using Telegram.Bot;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,9 @@ builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));//get jwt sections from appsettings
 
 builder.Services.AddScoped<HttpClient>();
+
+var telegramBotToken = builder.Configuration.GetSection("Telegram_token");// get telegram bot token form json settings
+builder.Services.AddSingleton<ITelegramBotClient>(new TelegramBotClient($"{telegramBotToken.Value}"));// add telegram bot (DI)
 
 GlobalConfiguration.Configuration.UseSerializerSettings// to avoid reference recursion exception
 (

@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using NotificationWebsite.Models.Models;
 using Telegram.Bot;
 
 namespace NotificationWebsite.Controllers.API
 {
     [ApiController]
+    [Route("api/telegram")]
     public class TelegramAPIController : ControllerBase
     {
         private readonly ITelegramBotClient _telegramBotClient;
@@ -13,9 +15,20 @@ namespace NotificationWebsite.Controllers.API
             _telegramBotClient = _telegramBot;
         }
         [HttpPost("telegramSendMessage")]
-        public async Task<IActionResult> SendTelegramMessage()
+        public async Task<IActionResult> SendTelegramMessage([FromBody]TelegramMessageRequest request)
         {
-            return null;
+            try
+            {
+                var chat = await _telegramBotClient.GetChatAsync(request.Username);
+
+                await _telegramBotClient.SendTextMessageAsync(chat.Id, "Message");
+                
+                return Ok("Message was sent successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"{ex.Message}");
+            }
         }
 
     }

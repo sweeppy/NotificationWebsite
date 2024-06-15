@@ -225,8 +225,8 @@
     top: 50%;  
     left: 50%;  
     transform: translate(-50%, -50%);  
-    width: 40%;  
-    height: 50%;  
+    width: 50%;  
+    height: 60%;  
     border-radius: 10px;
     z-index: 2;
     animation: open-modal-win 0.3s forwards;

@@ -2,7 +2,7 @@ using Google.Apis.Gmail.v1;
 using Google.Apis.Gmail.v1.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NotificationWebsite.DataAccess.Contracts;
+using NotificationWebsite.Models.Contracts;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
 

@@ -1,10 +1,9 @@
 using Google.Apis.Gmail.v1;
 using Google.Apis.Gmail.v1.Data;
-using Google.Apis.Services;
 using Hangfire;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
-using NotificationWebsite.DataAccess.Contracts;
+using NotificationWebsite.Models.Contracts;
 using NotificationWebsite.Models;
 using NotificationWebsite.Utility;
 using NotificationWebsite.Utility.Helpers.NotificationActions;
