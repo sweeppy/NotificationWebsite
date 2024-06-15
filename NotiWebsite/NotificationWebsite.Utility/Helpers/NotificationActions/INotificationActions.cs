@@ -11,6 +11,7 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
 
         public Notification MakeNotificationFromRequest(CreateNotificationRequest request, User authUser);
 
-        public Task SendLetterAndUpdateNotificationStatusAsync(Notification notification, User authenticatedUser, Message message);
+        public Task SendAndUpdateNotificationGmail(Notification notification, User authenticatedUser, Message message);
+        
     }
 }

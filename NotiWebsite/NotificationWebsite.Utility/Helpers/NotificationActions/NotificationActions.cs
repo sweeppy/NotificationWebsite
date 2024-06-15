@@ -48,16 +48,22 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
             return notification;
         }
 
-        public async Task SendLetterAndUpdateNotificationStatusAsync(Notification notification,
+        public async Task SendAndUpdateNotificationGmail(Notification notification,
          User authenticatedUser, Message message)
         {
             if(authenticatedUser != null && notification != null && message != null)
             {
-                _gmailService.Users.Messages.Send(message, "me").ExecuteAsync();
-                User user = await _db.Users.Include(u => u.Notifications).FirstOrDefaultAsync(u => u.Id == authenticatedUser.Id);
+                await _gmailService.Users.Messages.Send(message, "me").ExecuteAsync();
+
+                await UpdateNotificationStatusAsunc(authenticatedUser, notification);
+            }
+        }
+
+        public async Task UpdateNotificationStatusAsunc(User authenticatedUser, Notification notification)
+        {
+            User user = await _db.Users.Include(u => u.Notifications).FirstOrDefaultAsync(u => u.Id == authenticatedUser.Id);
                 user.Notifications.FirstOrDefault(n => n.Id == notification.Id).Status = NotificationStatuses.Sent;
                 await _db.SaveChangesAsync();
-            }
         }
     }
 }

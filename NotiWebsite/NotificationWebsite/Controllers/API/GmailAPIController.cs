@@ -36,13 +36,12 @@ namespace NotificationWebsite.Controllers.API
             {
                 return BadRequest("Notification is null");
             }
-            var context = accessor.HttpContext;
+
             //get user from jwt token
-            User authenticatedUser = await _jwtService.
-            GetUserByTokenAsync(context.Request.Cookies["L_Cookie"]);
+            User authenticatedUser = await _jwtService.GetUserByTokenAsync(accessor.HttpContext.Request.Cookies["L_Cookie"]);
+
             //make notification model from requset body
-            Notification notification = _notiActions.
-            MakeNotificationFromRequest(request, authenticatedUser);
+            Notification notification = _notiActions.MakeNotificationFromRequest(request, authenticatedUser);
 
             if (authenticatedUser == null || notification == null)
             {
@@ -80,7 +79,7 @@ namespace NotificationWebsite.Controllers.API
 
                         // Change notification status
                         BackgroundJob.Schedule(() => 
-                        _notiActions.SendLetterAndUpdateNotificationStatusAsync(
+                        _notiActions.SendAndUpdateNotificationGmail(
                             notification, authenticatedUser, newMsg),delay);
                     }                         
                 }
