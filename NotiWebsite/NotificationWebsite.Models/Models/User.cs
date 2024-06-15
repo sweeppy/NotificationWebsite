@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
+using Telegram.Bot.Types;
 
 namespace NotificationWebsite.Models
 {
@@ -20,5 +21,7 @@ namespace NotificationWebsite.Models
 
         public List<Notification> Notifications { get; set; }
 
+        public long ChatIdIdentifier { get; set; }
+        public ChatId ChatId => new ChatId(ChatIdIdentifier);
     }
 }

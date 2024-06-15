@@ -18,14 +18,12 @@ namespace NotificationWebsite.DataAccess.Data
         }
         public async Task<User> GetByEmail(string? email)
         {
-            return await _db.Users.Include(u => u.Notifications)
-            .FirstOrDefaultAsync(u => u.Email == email);
+            return await _db.Users.Include(u => u.Notifications).FirstOrDefaultAsync(u => u.Email == email);
         }
 
         public async Task<User> GetById(int id)
         {
-            return await _db.Users.Include(u => u.Notifications)
-            .FirstOrDefaultAsync(u => u.Id == id);
+            return await _db.Users.Include(u => u.Notifications).FirstOrDefaultAsync(u => u.Id == id);
         }
     }
 }
