@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using NotificationWebsite.Models.Contracts;
 using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
+using Telegram.Bot;
+using Microsoft.AspNetCore.Identity;
 
 namespace NotificationWebsite.Utility.Helpers.NotificationActions
 {
@@ -57,6 +59,13 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
 
                 await UpdateNotificationStatusAsunc(authenticatedUser, notification);
             }
+        }
+
+        public async Task SendAndUpdateNotificationTelegram(Telegram.Bot.Types.ChatId chatId, User user,
+            Notification notification, ITelegramBotClient telegramBotClient)
+        {
+            await telegramBotClient.SendTextMessageAsync(chatId, $"{notification.Header} \n{notification.Message}");
+            await UpdateNotificationStatusAsunc(user, notification);
         }
 
         public async Task UpdateNotificationStatusAsunc(User authenticatedUser, Notification notification)

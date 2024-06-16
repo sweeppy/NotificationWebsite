@@ -18,8 +18,7 @@ namespace NotificationWebsite.Models
         [JsonIgnore]//!to stop return password in JSON responses
         [RegularExpression(@"^(?=.*\p{Lu})(?=.*\p{Nd}).{6,}$", ErrorMessage = "The password must contain capital letters and numbers")]
         public string Password { get; set; } = string.Empty;
-
-        public List<Notification> Notifications { get; set; }
+        public List<Notification> Notifications { get; set; } = new List<Notification>();
 
         public long ChatIdIdentifier { get; set; }
         public ChatId ChatId => new ChatId(ChatIdIdentifier);

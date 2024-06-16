@@ -12,6 +12,9 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
         public Notification MakeNotificationFromRequest(CreateNotificationRequest request, User authUser);
 
         public Task SendAndUpdateNotificationGmail(Notification notification, User authenticatedUser, Message message);
+
+        public Task SendAndUpdateNotificationTelegram(Telegram.Bot.Types.ChatId chatId, User user,
+            Notification notification, Telegram.Bot.ITelegramBotClient telegramBotClient);
         
     }
 }

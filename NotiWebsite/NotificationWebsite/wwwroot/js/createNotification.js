@@ -165,7 +165,7 @@ async function CreateNewNotification() {
           break;
         case "telegram":
           response = await fetch(
-            "http://localhost:5019/api/gmail/SendTelegramMessage",
+            "http://localhost:5019/api/telegram/telegramSendMessage",
             {
               method: "POST",
               headers: {
@@ -175,6 +175,9 @@ async function CreateNewNotification() {
               body: JSON.stringify(requestData),
             }
           );
+          if (response.status == 204) {
+            OpenTelegramLink();
+          }
           break;
         case "gmail":
           response = await fetch(
@@ -196,4 +199,9 @@ async function CreateNewNotification() {
   }
   document.location.reload();
   console.log("End CreateNewNotification function");
+}
+
+function OpenTelegramLink() {
+  const window = document.getElementById("");
+  window.style.display = "block";
 }

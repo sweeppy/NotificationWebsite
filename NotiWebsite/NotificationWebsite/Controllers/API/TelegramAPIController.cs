@@ -37,7 +37,7 @@ namespace NotificationWebsite.Controllers.API
 
             Notification notification = _notiActions.MakeNotificationFromRequest(request, user);
             
-            if (user.ChatId == null)
+            if (user.ChatId == 0)
             {
                 return NoContent();
             }
@@ -48,7 +48,9 @@ namespace NotificationWebsite.Controllers.API
                 
                 var delay = notification.Date - DateTime.Now;
 
-                BackgroundJob.Schedule(() => SendTelegramMessage(chatId, notification), delay);
+                await _notiActions.AddNotificationToDBAsync(notification, user);
+
+                BackgroundJob.Schedule(() => _notiActions.SendAndUpdateNotificationTelegram(chatId, user, notification, _telegramBotClient), delay);
             }
             catch (Exception ex)
             {
@@ -58,9 +60,5 @@ namespace NotificationWebsite.Controllers.API
             return Ok("The message was sent successfully");
         }
 
-        private async void SendTelegramMessage(ChatId chatId, Notification notification)
-        {
-            await _telegramBotClient.SendTextMessageAsync(chatId, $"{notification.Header} \n{notification.Message}");
-        }
     }
 }
