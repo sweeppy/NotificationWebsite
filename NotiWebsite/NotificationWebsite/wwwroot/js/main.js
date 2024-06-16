@@ -1,7 +1,13 @@
 const modalContainer = document.getElementById("modal-container");
-const modal = document.getElementById("modal");
+const modalNotification = document.getElementById("modal");
+const modalTelegram = document.getElementById("telegramModal");
 const addIcon = document.querySelector(".add-icon");
-const closeModal = document.querySelector(".close-modal-add-notification");
+const closeCreateNotifcationSpan = document.querySelector(
+  ".close-modal-add-notification"
+);
+const closeTelegramInstructions = document.querySelector(
+  ".close-telegram-window"
+);
 const chosenIcon_vk = document.getElementById("chosen-vk");
 const chosenIcon_telegram = document.getElementById("chosen-telegram");
 const chosenIcon_gmail = document.getElementById("chosen-gmail");
@@ -68,17 +74,21 @@ function showNotificationInfo(status, socialNetwork, message, header, date) {
 
 addIcon.onclick = function () {
   modalContainer.style.display = "block";
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
+  modalNotification.style.display = "flex";
 };
 
-closeModal.onclick = function () {
-  modal.classList.add("close-modal-win-animation");
+closeCreateNotifcationSpan.onclick = function () {
+  modalNotification.classList.add("close-modal-win-animation");
   setTimeout(function () {
-    modal.style.display = "none";
+    modalNotification.style.display = "none";
     modalContainer.style.display = "none";
-    modal.classList.remove("close-modal-win-animation");
+    modalNotification.classList.remove("close-modal-win-animation");
   }, 400);
+};
+
+closeTelegramInstructions.onclick = function () {
+  modalTelegram.style.display = "none";
+  modalTelegram.classList.remove("close-modal-win-animation");
 };
 
 function Chosen(iconId, itemId) {

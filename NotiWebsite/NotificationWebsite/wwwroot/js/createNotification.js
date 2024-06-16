@@ -191,17 +191,20 @@ async function CreateNewNotification() {
               body: JSON.stringify(requestData),
             }
           );
+          document.location.reload();
           break;
       }
     } catch (error) {
       console.error("Fetch error:", error);
     }
   }
-  document.location.reload();
-  console.log("End CreateNewNotification function");
 }
 
 function OpenTelegramLink() {
-  const window = document.getElementById("");
+  const closeCreateNotifcationSpan = document.querySelector(
+    ".close-modal-add-notification"
+  );
+  closeCreateNotifcationSpan.click();
+  const window = document.getElementById("telegramModal");
   window.style.display = "block";
 }

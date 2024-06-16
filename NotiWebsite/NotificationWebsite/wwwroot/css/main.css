@@ -549,3 +549,74 @@ header .icons span:last-child{
 .close-modal-win-animation {
     animation: close-modal-win 0.4s forwards;
 }
+
+.telegram-window
+{
+    display: none; 
+    position: fixed;
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    width: 400px;  
+    height: 270px;  
+    border-radius: 10px;
+    z-index: 2;
+    animation: open-modal-win 0.3s forwards;
+    border: none; 
+    background-color: #D8EFD3;
+    padding: 3px;
+}
+.telegram-window-informtaion
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.telegram-bot-link
+{
+    text-decoration: none;
+    color: black;
+    background-color: #95D2B3;
+    border-radius: 6px;
+    padding: 8px;
+    transition: all 0.3s;
+}
+.telegram-bot-link:hover{
+    scale: 1.03;
+}
+
+.close-telegram-window {
+    color: #31363F;
+    position: absolute;
+    right: 2%; 
+    top: 1%;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.close-telegram-window:hover{
+    color: #222831;
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.mg-0{
+    margin: 0 !important;
+}
+.mg-5{
+    margin: 5px !important;
+}
+.mg-10{
+    margin: 10px !important;
+}
