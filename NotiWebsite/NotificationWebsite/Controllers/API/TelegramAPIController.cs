@@ -39,7 +39,7 @@ namespace NotificationWebsite.Controllers.API
             
             if (user.ChatId == null)
             {
-                // here user need to send message to telegram bot, and get his <ChatId>
+                return NoContent();
             }
             
             try

@@ -132,7 +132,6 @@ const CreateTime = () => {
 CreateTime();
 
 async function CreateNewNotification() {
-  console.log("jasdf");
   const postHeader = document.getElementById("title").value,
     postMessage = document.getElementById("message").value,
     postSocial = document.querySelector(".chosen").getAttribute("name");
@@ -160,17 +159,37 @@ async function CreateNewNotification() {
       social: postSocial,
     };
     try {
-      const response = await fetch(
-        "http://localhost:5019/api/gmail/gmailSendMessage",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Cookie: document.cookie,
-          },
-          body: JSON.stringify(requestData),
-        }
-      );
+      let response;
+      switch (postSocial) {
+        case "vk":
+          break;
+        case "telegram":
+          response = await fetch(
+            "http://localhost:5019/api/gmail/SendTelegramMessage",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Cookie: document.cookie,
+              },
+              body: JSON.stringify(requestData),
+            }
+          );
+          break;
+        case "gmail":
+          response = await fetch(
+            "http://localhost:5019/api/gmail/gmailSendMessage",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Cookie: document.cookie,
+              },
+              body: JSON.stringify(requestData),
+            }
+          );
+          break;
+      }
     } catch (error) {
       console.error("Fetch error:", error);
     }

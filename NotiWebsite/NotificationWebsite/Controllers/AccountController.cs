@@ -94,9 +94,9 @@ namespace NotificationWebsite.Controllers
                     TempData["SuccessMessage"] = loginResponse.Message;
 
                     HttpContext.Response.Cookies
-                        .Append("L_Cookie", loginResponse.Token, new CookieOptions { HttpOnly = true });//add token to cookies
+                    .Append("L_Cookie", loginResponse.Token, new CookieOptions { HttpOnly = true });//add token to cookies
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Home", "Main");
                 }
                 else
                 {
