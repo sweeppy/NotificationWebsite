@@ -8,6 +8,8 @@ using Hangfire;
 using Newtonsoft.Json;
 using NotificationWebsite.Utility.Oauth.Configuration;
 using Telegram.Bot;
+using NotificationWebsite.Utility.Configuration.TelegramBot;
+using NotificationWebsite.Utility.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +28,8 @@ builder.Services.AddScoped<ILoginValidation, CheckValidation>();
 
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));//get jwt sections from appsettings
+
+builder.Services.AddScoped<ITelegramBotConfiguration, TelegramBotConfiguration>();
 
 builder.Services.AddScoped<HttpClient>();
 

@@ -14,7 +14,7 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
         public Task SendAndUpdateNotificationGmail(Notification notification, User authenticatedUser, Message message);
 
         public Task SendAndUpdateNotificationTelegram(Telegram.Bot.Types.ChatId chatId, User user,
-            Notification notification, Telegram.Bot.ITelegramBotClient telegramBotClient);
+            Notification notification);
         
     }
 }

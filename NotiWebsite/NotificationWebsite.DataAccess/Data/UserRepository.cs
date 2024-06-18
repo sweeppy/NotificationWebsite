@@ -5,7 +5,7 @@ namespace NotificationWebsite.DataAccess.Data
 {
     public class UserRepository : IUserRepository
     {
-        private ApplicationDbContext _db;
+        private readonly ApplicationDbContext _db;
         public UserRepository(ApplicationDbContext db)
         {
             _db = db;
@@ -16,7 +16,7 @@ namespace NotificationWebsite.DataAccess.Data
             await _db.SaveChangesAsync();
             return user;
         }
-        public async Task<User> GetByEmail(string? email)
+        public async Task<User> GetByEmail(string email)
         {
             return await _db.Users.Include(u => u.Notifications).FirstOrDefaultAsync(u => u.Email == email);
         }
@@ -24,6 +24,11 @@ namespace NotificationWebsite.DataAccess.Data
         public async Task<User> GetById(int id)
         {
             return await _db.Users.Include(u => u.Notifications).FirstOrDefaultAsync(u => u.Id == id);
+        }
+
+        public async Task Update()
+        {
+            await _db.SaveChangesAsync();
         }
     }
 }

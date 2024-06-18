@@ -1,7 +1,10 @@
 using Hangfire;
 using Microsoft.AspNetCore.Mvc;
+using NotificationWebsite.DataAccess.Data;
 using NotificationWebsite.Models;
 using NotificationWebsite.Models.Contracts;
+using NotificationWebsite.Utility.Configuration;
+using NotificationWebsite.Utility.Configuration.TelegramBot;
 using NotificationWebsite.Utility.Helpers.NotificationActions;
 using NotificationWebsite.Utility.Jwt;
 using Telegram.Bot;
@@ -13,17 +16,17 @@ namespace NotificationWebsite.Controllers.API
     [Route("api/telegram")]
     public class TelegramAPIController : ControllerBase
     {
-        private readonly ITelegramBotClient _telegramBotClient;
-
         private readonly IJwtService _jwtService;
 
         private readonly INotificationActions _notiActions;
 
-        public TelegramAPIController(ITelegramBotClient _telegramBot, IJwtService jwtService, INotificationActions notiActions)
+        ITelegramBotConfiguration _telegramBotConfiguration;
+
+        public TelegramAPIController(IServiceProvider serviceProvider)
         {
-            _telegramBotClient = _telegramBot;
-            _jwtService = jwtService;
-            _notiActions = notiActions;
+            _jwtService = serviceProvider.GetRequiredService<IJwtService>();
+            _notiActions = serviceProvider.GetRequiredService<INotificationActions>();
+            _telegramBotConfiguration = serviceProvider.GetRequiredService<ITelegramBotConfiguration>();
         }
         [HttpPost("telegramSendMessage")]
         public async Task<IActionResult> SendTelegramMessage([FromBody]CreateNotificationRequest request, [FromServices] IHttpContextAccessor accessor)
@@ -32,6 +35,8 @@ namespace NotificationWebsite.Controllers.API
             {
                 return BadRequest("Invalid request");
             }
+
+            _telegramBotConfiguration.Configure();
 
             Models.User user = await _jwtService.GetUserByTokenAsync(accessor.HttpContext.Request.Cookies["L_Cookie"]);
 
@@ -50,7 +55,7 @@ namespace NotificationWebsite.Controllers.API
 
                 await _notiActions.AddNotificationToDBAsync(notification, user);
 
-                BackgroundJob.Schedule(() => _notiActions.SendAndUpdateNotificationTelegram(chatId, user, notification, _telegramBotClient), delay);
+                BackgroundJob.Schedule(() => _notiActions.SendAndUpdateNotificationTelegram(chatId, user, notification), delay);
             }
             catch (Exception ex)
             {

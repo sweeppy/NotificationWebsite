@@ -17,10 +17,13 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
 
         private readonly GmailService _gmailService;
 
-        public NotificationActions(ApplicationDbContext db, GmailService gmailService)
+        private readonly ITelegramBotClient _telegramBotClient;
+
+        public NotificationActions(ApplicationDbContext db, GmailService gmailService, ITelegramBotClient telegramBotClient)
         {
             _db = db;
             _gmailService = gmailService;
+            _telegramBotClient = telegramBotClient;
         }
 
         public async Task<IActionResult> AddNotificationToDBAsync(Notification notification, User authenticatedUser)
@@ -62,9 +65,9 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
         }
 
         public async Task SendAndUpdateNotificationTelegram(Telegram.Bot.Types.ChatId chatId, User user,
-            Notification notification, ITelegramBotClient telegramBotClient)
+            Notification notification)
         {
-            await telegramBotClient.SendTextMessageAsync(chatId, $"{notification.Header} \n{notification.Message}");
+            await _telegramBotClient.SendTextMessageAsync(chatId, $"{notification.Header.ToUpper()} \n{notification.Message}");
             await UpdateNotificationStatusAsunc(user, notification);
         }
 
