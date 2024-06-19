@@ -8,6 +8,8 @@ _Already done:_
 * Oauth 2.0 authentication.
 * Send message to user from his email at a specific time(the application must work while the letter is being sent).
 * Hangfire configuration and implementation.
+* Telegram bot setup.
+* Notification system via telegram bot.
 
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/homePage.png)
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/main.png)
