@@ -46,7 +46,7 @@ namespace NotificationWebsite.Utility.Configuration.TelegramBot
             {
                 user.ChatIdIdentifier = message.Chat.Id;
                 await _userRepository.Update();
-                await client.SendTextMessageAsync(message.Chat, "Your chat id was successfully updated, now you can get notificaiton in telegram! Our site: http://localhost:5019/main/home");
+                await client.SendTextMessageAsync(message.Chat, "Your chat id was successfully updated, now you can get notificaiton in telegram! Our website: http://localhost:5019/main/home");
             }
         }
         private async Task Error(ITelegramBotClient client, Exception exception, CancellationToken token)
