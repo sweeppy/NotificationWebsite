@@ -177,6 +177,8 @@ async function CreateNewNotification() {
           );
           if (response.status == 204) {
             OpenTelegramLink();
+          } else {
+            document.location.reload();
           }
           break;
         case "gmail":

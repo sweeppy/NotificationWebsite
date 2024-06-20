@@ -10,10 +10,13 @@ using NotificationWebsite.Utility.Oauth.Configuration;
 using Telegram.Bot;
 using NotificationWebsite.Utility.Configuration.TelegramBot;
 using NotificationWebsite.Utility.Configuration;
+using VkNet.Abstractions;
+using VkNet;
+using VkNet.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Services:
+// Services:
 builder.Services.AddCors();
 
 builder.Services.AddControllersWithViews();
@@ -24,12 +27,19 @@ builder.Services.AddHangfire(config => config.UseSqlServerStorage(builder.Config
 builder.Services.AddHangfireServer();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
 builder.Services.AddScoped<ILoginValidation, CheckValidation>();
 
 builder.Services.AddScoped<IJwtService, JwtService>();
-builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));//get jwt sections from appsettings
+builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));//g et jwt sections from appsettings
 
 builder.Services.AddScoped<ITelegramBotConfiguration, TelegramBotConfiguration>();
+
+builder.Services.AddSingleton<IVkApi>(sp => {
+    var api = new VkApi();
+    api.Authorize(new ApiAuthParams{ AccessToken = builder.Configuration["VkConfig:AccessToken"]});
+    return api;
+    });
 
 builder.Services.AddScoped<HttpClient>();
 
