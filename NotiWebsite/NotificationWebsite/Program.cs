@@ -13,6 +13,7 @@ using NotificationWebsite.Utility.Configuration;
 using VkNet.Abstractions;
 using VkNet;
 using VkNet.Model;
+using NotificationWebsite.Utility.Configuration.Vkontakte;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +42,8 @@ builder.Services.AddSingleton<IVkApi>(sp => {
     return api;
     });
 
+builder.Services.AddHostedService<VkontakteMessageProcessor>();
+
 builder.Services.AddScoped<HttpClient>();
 
 var telegramBotToken = builder.Configuration.GetSection("Telegram_token");// get telegram bot token form json settings
@@ -64,6 +67,8 @@ builder.Services.AddScoped<INotificationActions, NotificationActions>();
 
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddLogging(builder => builder.AddConsole());
+
 
 var app = builder.Build();
 
@@ -74,6 +79,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
