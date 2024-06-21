@@ -8,10 +8,8 @@ const closeCreateNotifcationSpan = document.querySelector(
 const closeTelegramInstructions = document.querySelector(
   ".close-telegram-window"
 );
-const chosenIcon_vk = document.getElementById("chosen-vk");
 const chosenIcon_telegram = document.getElementById("chosen-telegram");
 const chosenIcon_gmail = document.getElementById("chosen-gmail");
-const vkItem = document.getElementById("vk-item");
 const gmailItem = document.getElementById("gmail-item");
 const telegramItem = document.getElementById("telegram-item");
 
@@ -94,12 +92,10 @@ closeTelegramInstructions.onclick = function () {
 function Chosen(iconId, itemId) {
   chosenIcon_gmail.style.visibility = "hidden";
   chosenIcon_telegram.style.visibility = "hidden";
-  chosenIcon_vk.style.visibility = "hidden";
   chosenIcon = document.getElementById(iconId);
   chosenIcon.style.visibility = "visible";
 
   telegramItem.classList.remove("chosen");
-  vkItem.classList.remove("chosen");
   gmailItem.classList.remove("chosen");
   chosenItem = document.getElementById(itemId);
   chosenItem.classList.add("chosen");
