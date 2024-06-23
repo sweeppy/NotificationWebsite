@@ -13,6 +13,25 @@ const chosenIcon_gmail = document.getElementById("chosen-gmail");
 const gmailItem = document.getElementById("gmail-item");
 const telegramItem = document.getElementById("telegram-item");
 
+const menuButton = document.getElementById("menuBtn");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+let isMenuOpen = false;
+
+menuButton.onclick = function () {
+  if (isMenuOpen) {
+    dropdownMenu.style.display = "none";
+  } else {
+    const rect = menuButton.getBoundingClientRect();
+
+    dropdownMenu.style.display = "flex";
+
+    dropdownMenu.style.top = rect.bottom - dropdownMenu.offsetHeight / 2 + "px";
+    dropdownMenu.style.left = rect.left - dropdownMenu.offsetWidth / 2 + "px";
+  }
+  isMenuOpen = !isMenuOpen;
+};
+
 const searchInput = document.querySelector(".search-input");
 searchInput.addEventListener("input", function () {
   const searchText = searchInput.value.toLowerCase();

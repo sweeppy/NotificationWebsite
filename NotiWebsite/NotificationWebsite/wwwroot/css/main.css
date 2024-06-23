@@ -34,6 +34,34 @@
     margin: auto;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    flex-direction: column;
+    z-index: 1;
+    list-style-type: none;
+    background-color: #1d232b;
+    border-radius: 10px;
+    padding: 5px ;
+}
+.dropdown-menu-element
+{
+    display: flex;
+    background-color: #13161c;
+    padding: 2px;
+    color: #cecece;
+    text-decoration: none;
+    font-size: 14px;
+    min-height: 30px;
+    border-radius: 4px;
+}
+
+.dropdown-menu-element:hover
+{
+    background-color: #1d232b;
+}
+
 .search-container {
     height: 35%;
     width: 80%; 
