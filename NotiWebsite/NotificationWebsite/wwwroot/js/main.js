@@ -20,7 +20,6 @@ searchInput.addEventListener("input", function () {
 });
 
 function SearchNotification(searchText) {
-  console.log("search");
   const notificationBlocks = document.querySelectorAll(".notification-block");
   notificationBlocks.forEach(function (notification) {
     const header = notification
