@@ -15,3 +15,8 @@ _Already done:_
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/main.png)
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/addNotification.png)
 ![WebsitePreview](https://github.com/sweeppy/NotificationWebSite/blob/main/README_images/telegramModalWindow.png)
+
+### Started:
+_03.14.2024_
+### Finished:
+???
