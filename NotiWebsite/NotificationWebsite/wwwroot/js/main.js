@@ -13,6 +13,30 @@ const chosenIcon_gmail = document.getElementById("chosen-gmail");
 const gmailItem = document.getElementById("gmail-item");
 const telegramItem = document.getElementById("telegram-item");
 
+const searchInput = document.querySelector(".search-input");
+searchInput.addEventListener("input", function () {
+  const searchText = searchInput.value.toLowerCase();
+  SearchNotification(searchText);
+});
+
+function SearchNotification(searchText) {
+  console.log("search");
+  const notificationBlocks = document.querySelectorAll(".notification-block");
+  notificationBlocks.forEach(function (notification) {
+    const header = notification
+      .querySelector(".notification-header")
+      .textContent.toLowerCase();
+    const message = notification
+      .querySelector(".notification-body")
+      .textContent.toLowerCase();
+    if (header.includes(searchText) || message.includes(searchText)) {
+      notification.style.display = "flex";
+    } else {
+      notification.style.display = "none";
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   var notificationStatusElements = document.querySelectorAll(
     ".notification-status"

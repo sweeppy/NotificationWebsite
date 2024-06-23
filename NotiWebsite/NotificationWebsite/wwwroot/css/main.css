@@ -114,6 +114,9 @@
     overflow: hidden;
 }
 
+
+
+
 .notification-block:hover {
     cursor: pointer;
     filter: brightness(1.2);
@@ -129,7 +132,7 @@
 .notification-block-information{
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
 }
 .notification-header{
