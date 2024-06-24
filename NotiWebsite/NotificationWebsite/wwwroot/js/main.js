@@ -15,6 +15,10 @@ const telegramItem = document.getElementById("telegram-item");
 
 const menuButton = document.getElementById("menuBtn");
 
+const dropdownContent = document.getElementById("dropdown-content");
+const applyAction = document.getElementById("applyAction");
+const cancelAction = document.getElementById("cancelAction");
+
 menuButton.addEventListener("click", function () {
   var dropdownContent = document.getElementById("dropdown-content");
   if (dropdownContent.style.display === "block") {
@@ -26,24 +30,23 @@ menuButton.addEventListener("click", function () {
   }
 });
 
-document.addEventListener("click", function (event) {
-  var dropdownContent = document.getElementById("dropdown-content");
-  var dropdownBtn = document.getElementById("dropdown-btn");
-  if (
-    !dropdownBtn.contains(event.target) &&
-    !dropdownContent.contains(event.target)
-  ) {
-    dropdownContent.style.display = "none";
-  }
-});
-
 function SelectNotifications() {
   document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
     checkBox.style.display = "block";
   });
-  var dropdownContent = document.getElementById("dropdown-content");
   dropdownContent.style.display = "none";
+  applyAction.style.display = "block";
+  cancelAction.style.display = "block";
 }
+
+cancelAction.addEventListener("click", function () {
+  console.log("action");
+  document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
+    checkBox.style.display = "none";
+    checkBox.classList.remove("checked");
+  });
+  dropdownContent.style.display = "none";
+});
 
 document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
   checkBox.addEventListener("click", function () {
