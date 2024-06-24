@@ -37,7 +37,7 @@
                         string header = notification.Header.Length >= 12 ? notification.Header.Substring(0, 12) + "..." :
                         notification.Header;
                         string status = notification.Status.ToLower();
-                        <div class="notification-block" onclick="showNotificationInfo('@notification.Status', '@notification.SocialNetwork', '@notification.Message', '@notification.Header', '@notification.Date')">
+                        <div id="@notification.Id" class="notification-block" onclick="showNotificationInfo('@notification.Status', '@notification.SocialNetwork', '@notification.Message', '@notification.Header', '@notification.Date')">
                             <div class="selection-checkbox"></div>
                             <div class="notification-status">
                                 @switch (status)

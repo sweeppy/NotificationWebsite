@@ -77,5 +77,18 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
                 user.Notifications.FirstOrDefault(n => n.Id == notification.Id).Status = NotificationStatuses.Sent;
                 await _db.SaveChangesAsync();
         }
+
+        public async Task<Notification> GetNotificationAsync(int id)
+        {
+            var notification = await _db.Notifications.FirstOrDefaultAsync<Notification>(n => n.Id == id);
+            return notification;
+        }
+
+        public async Task DeleteNotifcationAsync(Notification notification)
+        {
+            if (notification == null) return;
+            _db.Notifications.Remove(notification);
+            await _db.SaveChangesAsync();
+        }
     }
 }

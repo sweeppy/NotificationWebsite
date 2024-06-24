@@ -20,6 +20,7 @@ const applyAction = document.getElementById("applyAction");
 const cancelAction = document.getElementById("cancelAction");
 
 let notifcationAction = "";
+let notifcationsForActions = [];
 
 menuButton.addEventListener("click", function () {
   var dropdownContent = document.getElementById("dropdown-content");
@@ -54,10 +55,21 @@ cancelAction.addEventListener("click", function () {
 });
 
 applyAction.addEventListener("click", function () {
-  console.log(notifcationAction);
   switch (notifcationAction) {
     case "deleteNotificationAction":
-      console.log("delete");
+      fetch("http://localhost:5019/api/notifications/delete", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(notifcationsForActions),
+      }).then((response) => {
+        if (!response.ok) {
+          console.log(response);
+        } else {
+          document.location.reload();
+        }
+      });
       break;
 
     case "cancelSendingAction":
@@ -68,7 +80,17 @@ applyAction.addEventListener("click", function () {
 
 document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
   checkBox.addEventListener("click", function () {
-    this.classList.toggle("checked");
+    var notificationId = checkBox.closest(".notification-block").id;
+    if (!checkBox.classList.contains("checked")) {
+      checkBox.classList.add("checked");
+      notifcationsForActions.push(notificationId);
+    } else {
+      checkBox.classList.remove("checked");
+      var indexToRemove = notifcationsForActions.indexOf(notificationId);
+      indexToRemove != -1
+        ? notifcationsForActions.splice(indexToRemove, 1)
+        : console.log("error in notifcationsForActions array");
+    }
   });
 });
 

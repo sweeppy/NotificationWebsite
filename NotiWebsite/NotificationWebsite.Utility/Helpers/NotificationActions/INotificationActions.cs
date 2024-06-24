@@ -15,6 +15,10 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
 
         public Task SendAndUpdateNotificationTelegram(Telegram.Bot.Types.ChatId chatId, User user,
             Notification notification);
+
+        public Task<Notification> GetNotificationAsync(int id); 
+
+        public Task DeleteNotifcationAsync(Notification notification);
         
     }
 }
