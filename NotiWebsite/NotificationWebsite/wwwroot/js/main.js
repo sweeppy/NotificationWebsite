@@ -19,6 +19,8 @@ const dropdownContent = document.getElementById("dropdown-content");
 const applyAction = document.getElementById("applyAction");
 const cancelAction = document.getElementById("cancelAction");
 
+let notifcationAction = "";
+
 menuButton.addEventListener("click", function () {
   var dropdownContent = document.getElementById("dropdown-content");
   if (dropdownContent.style.display === "block") {
@@ -30,7 +32,8 @@ menuButton.addEventListener("click", function () {
   }
 });
 
-function SelectNotifications() {
+function SelectNotifications(action) {
+  notifcationAction = action;
   document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
     checkBox.style.display = "block";
   });
@@ -40,12 +43,27 @@ function SelectNotifications() {
 }
 
 cancelAction.addEventListener("click", function () {
-  console.log("action");
   document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
     checkBox.style.display = "none";
     checkBox.classList.remove("checked");
+
+    applyAction.style.display = "none";
+    cancelAction.style.display = "none";
   });
   dropdownContent.style.display = "none";
+});
+
+applyAction.addEventListener("click", function () {
+  console.log(notifcationAction);
+  switch (notifcationAction) {
+    case "deleteNotificationAction":
+      console.log("delete");
+      break;
+
+    case "cancelSendingAction":
+      console.log("cancel");
+      break;
+  }
 });
 
 document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
