@@ -14,23 +14,42 @@ const gmailItem = document.getElementById("gmail-item");
 const telegramItem = document.getElementById("telegram-item");
 
 const menuButton = document.getElementById("menuBtn");
-const dropdownMenu = document.querySelector(".dropdown-menu");
 
-let isMenuOpen = false;
-
-menuButton.onclick = function () {
-  if (isMenuOpen) {
-    dropdownMenu.style.display = "none";
+menuButton.addEventListener("click", function () {
+  var dropdownContent = document.getElementById("dropdown-content");
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
   } else {
-    const rect = menuButton.getBoundingClientRect();
-
-    dropdownMenu.style.display = "flex";
-
-    dropdownMenu.style.top = rect.bottom - dropdownMenu.offsetHeight / 2 + "px";
-    dropdownMenu.style.left = rect.left - dropdownMenu.offsetWidth / 2 + "px";
+    dropdownContent.style.display = "block";
+    dropdownContent.style.top = this.offsetTop + this.offsetHeight + "px";
+    dropdownContent.style.left = this.offsetLeft + "px";
   }
-  isMenuOpen = !isMenuOpen;
-};
+});
+
+document.addEventListener("click", function (event) {
+  var dropdownContent = document.getElementById("dropdown-content");
+  var dropdownBtn = document.getElementById("dropdown-btn");
+  if (
+    !dropdownBtn.contains(event.target) &&
+    !dropdownContent.contains(event.target)
+  ) {
+    dropdownContent.style.display = "none";
+  }
+});
+
+function SelectNotifications() {
+  document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
+    checkBox.style.display = "block";
+  });
+  var dropdownContent = document.getElementById("dropdown-content");
+  dropdownContent.style.display = "none";
+}
+
+document.querySelectorAll(".selection-checkbox").forEach(function (checkBox) {
+  checkBox.addEventListener("click", function () {
+    this.classList.toggle("checked");
+  });
+});
 
 const searchInput = document.querySelector(".search-input");
 searchInput.addEventListener("input", function () {

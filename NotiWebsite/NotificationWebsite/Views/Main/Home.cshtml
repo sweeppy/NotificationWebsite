@@ -20,11 +20,11 @@
                         </path>
                     </svg>
                 </button>
-                <ul class="dropdown-menu">
-                    <li class="dropdown-menu-element">Menu Item 1</li>
-                    <li class="dropdown-menu-element">Menu Item 2</li>
-                    <li class="dropdown-menu-element">Menu Item 3</li>
-                </ul>
+                <div id="dropdown-content" class="poppins-light">
+                    <a onclick="SelectNotifications()">Delete notifications</a>
+                    <a>Cancel sending notifications</a>
+
+                </div>
 
             </div>
             <div class="separator"></div>
@@ -36,8 +36,8 @@
                         string header = notification.Header.Length >= 12 ? notification.Header.Substring(0, 12) + "..." :
                         notification.Header;
                         string status = notification.Status.ToLower();
-                        <div class="notification-block"
-                            onclick="showNotificationInfo('@notification.Status', '@notification.SocialNetwork', '@notification.Message', '@notification.Header', '@notification.Date')">
+                        <div class="notification-block" onclick="showNotificationInfo('@notification.Status', '@notification.SocialNetwork', '@notification.Message', '@notification.Header', '@notification.Date')">
+                            <div class="selection-checkbox"></div>
                             <div class="notification-status">
                                 @switch (status)
                                 {
