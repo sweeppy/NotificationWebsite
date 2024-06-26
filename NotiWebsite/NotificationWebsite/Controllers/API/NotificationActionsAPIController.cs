@@ -1,11 +1,13 @@
+using Hangfire;
 using Microsoft.AspNetCore.Mvc;
 using NotificationWebsite.Models;
+using NotificationWebsite.Utility;
 using NotificationWebsite.Utility.Helpers.NotificationActions;
 
 namespace NotificationWebsite.Controllers.API
 {
     [ApiController]
-    [Route("api/notifications")]
+    [Route("api/notificationActions")]
     public class NotificationActionsAPIController : ControllerBase
     {
         private readonly INotificationActions _notiActions;
@@ -23,7 +25,11 @@ namespace NotificationWebsite.Controllers.API
             {
                 foreach (var notificationId in notificationsId)
                 {
-                    Notification notification = await _notiActions.GetNotificationAsync(notificationId);
+                    Notification notification = await _notiActions.GetNotificationByIdAsync(notificationId);
+                    if (notification.Status == NotificationStatuses.Planned)
+                    {
+                        BackgroundJob.Delete(notification.JobId);
+                    }
                     await _notiActions.DeleteNotifcationAsync(notification);
                 }
             }
@@ -31,7 +37,28 @@ namespace NotificationWebsite.Controllers.API
             {
                 return BadRequest(ex.Message);
             }
-            return Ok("Ok");
+            return Ok("All selected notifications were deleted.");
+        }
+        [HttpPost("cancel")]
+        public async Task<IActionResult> CancelSelectedNotifications([FromBody] int[] notifcationsId)
+        {
+            if (notifcationsId == null) return BadRequest("Empty array.");
+
+            try
+            {
+                foreach(var notificationId in notifcationsId)
+                {
+                    Notification notification = await _notiActions.GetNotificationByIdAsync(notificationId);
+                    BackgroundJob.Delete(notification.JobId);
+                    notification.Status = NotificationStatuses.Canceled;
+                    await _notiActions.UpdateUsersDbAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok("All selected notifications were canceled.");
         }
     }
 }

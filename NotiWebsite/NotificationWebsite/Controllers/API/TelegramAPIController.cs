@@ -50,9 +50,9 @@ namespace NotificationWebsite.Controllers.API
                 
                 var delay = notification.Date - DateTime.Now;
 
-                await _notiActions.AddNotificationToDBAsync(notification, user);
+                notification.JobId = BackgroundJob.Schedule(() => _notiActions.SendAndUpdateNotificationTelegram(chatId, user, notification), delay);
 
-                BackgroundJob.Schedule(() => _notiActions.SendAndUpdateNotificationTelegram(chatId, user, notification), delay);
+                await _notiActions.AddNotificationToDBAsync(notification, user);
             }
             catch (Exception ex)
             {

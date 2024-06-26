@@ -14,8 +14,8 @@ namespace NotificationWebsite.Utility
 
     public static class NotificationStatuses
 {
-    public const string Planned = "Planned";
-    public const string Canceled = "Canceled";
-    public const string Sent = "Sent";
+    public const string Planned = "planned";
+    public const string Canceled = "canceled";
+    public const string Sent = "sent";
 }
 }

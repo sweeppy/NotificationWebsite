@@ -78,7 +78,7 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
                 await _db.SaveChangesAsync();
         }
 
-        public async Task<Notification> GetNotificationAsync(int id)
+        public async Task<Notification> GetNotificationByIdAsync(int id)
         {
             var notification = await _db.Notifications.FirstOrDefaultAsync<Notification>(n => n.Id == id);
             return notification;
@@ -88,6 +88,11 @@ namespace NotificationWebsite.Utility.Helpers.NotificationActions
         {
             if (notification == null) return;
             _db.Notifications.Remove(notification);
+            await _db.SaveChangesAsync();
+        }
+
+        public async Task UpdateUsersDbAsync()
+        {
             await _db.SaveChangesAsync();
         }
     }

@@ -57,7 +57,7 @@ cancelAction.addEventListener("click", function () {
 applyAction.addEventListener("click", function () {
   switch (notifcationAction) {
     case "deleteNotificationAction":
-      fetch("http://localhost:5019/api/notifications/delete", {
+      fetch("http://localhost:5019/api/notificationActions/delete", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,14 +66,22 @@ applyAction.addEventListener("click", function () {
       }).then((response) => {
         if (!response.ok) {
           console.log(response);
-        } else {
-          document.location.reload();
-        }
+        } else document.location.reload();
       });
       break;
 
     case "cancelSendingAction":
-      console.log("cancel");
+      fetch("http://localhost:5019/api/notificationActions/cancel", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(notifcationsForActions),
+      }).then((response) => {
+        if (!response.ok) {
+          console.log(response);
+        } else document.location.reload();
+      });
       break;
   }
 });

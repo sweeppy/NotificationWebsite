@@ -78,7 +78,7 @@ namespace NotificationWebsite.Controllers.API
                         // Send message on his email
 
                         // Change notification status
-                        BackgroundJob.Schedule(() => 
+                        notification.JobId =  BackgroundJob.Schedule(() => 
                         _notiActions.SendAndUpdateNotificationGmail(
                             notification, authenticatedUser, newMsg),delay);
                     }                         

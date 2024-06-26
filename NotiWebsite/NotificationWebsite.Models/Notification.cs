@@ -22,6 +22,8 @@ namespace NotificationWebsite.Models
         public string Status { get; set; }
         [Required(ErrorMessage = "This field is required")]
         public DateTime Date { get; set; }
+
+        public string JobId { get; set; } = string.Empty;
         public int UserId { get; set; }
         [ForeignKey("UserId")]
         [JsonIgnore]
