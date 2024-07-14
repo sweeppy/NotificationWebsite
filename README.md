@@ -1,7 +1,7 @@
 # NotificationWebsite
 ## Website to help you remember the necessary things.
 
-_Already done:_
+_Technologies used:_
 * Jwt token authentication.
 * Users and Notificatations db access.
 * Logic for creating new notifications(visual representation).
